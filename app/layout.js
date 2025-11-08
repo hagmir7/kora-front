@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import "@fontsource/alexandria"; // Defaults to weight 400
+import "@fontsource/alexandria/400.css"; // Specify weight
+// import "@fontsource/alexandria/400-italic.css"; // Specify weight and style
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +22,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
