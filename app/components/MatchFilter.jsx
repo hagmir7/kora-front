@@ -230,7 +230,7 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
         <div className='relative'>
           <button
             onClick={() => setShowDatePicker(!showDatePicker)}
-            className='w-14 h-10 bg-white border cursor-pointer border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'
+            className='w-14 h-10 hidden bg-white border cursor-pointer border-gray-300 rounded-lg md:flex items-center justify-center hover:bg-gray-50 transition-colors'
           >
             <Calendar className='w-5 h-5' />
           </button>
