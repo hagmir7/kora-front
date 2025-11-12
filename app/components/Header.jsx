@@ -1,12 +1,11 @@
 'use client'
 import { useState } from 'react'
-import { Menu, X, ChevronDown, Search, Home, Newspaper } from 'lucide-react'
+import { Menu, X, Search, Home, Newspaper } from 'lucide-react'
 import { FaFootballBall } from 'react-icons/fa'
 import Link from 'next/link'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isSportsDropdownOpen, setIsSportsDropdownOpen] = useState(false)
 
   const navItems = [
     {
@@ -64,12 +63,12 @@ const Header = () => {
             <div className='flex justify-start items-center'>
               <Link
                 className='flex relative h-8 w-32 ltr:md:mr-8 rtl:md:ml-8 gap-x-8 lg:w-36 ltr:xl:mr-[34px] rtl:xl:ml-[34px]'
-                href='/ar-mena'
+                href='/'
               >
                 <div className='relative w-full h-full'>
                   <div className='absolute inset-0 flex items-center justify-start'>
                     <span className='text-[#5C2D91] font-bold text-2xl'>
-                      beIN
+                      فيفا
                     </span>
                   </div>
                 </div>

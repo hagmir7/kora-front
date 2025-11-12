@@ -204,7 +204,7 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
           <button
             key={day.value}
             onClick={() => handleDateChange(day.value)}
-            className={`w-[70px] flex flex-col items-center px-1.5 py-2 rounded-t transition-colors ${
+            className={`w-[70px] flex flex-col items-center px-1.5 py-2 rounded-t cursor-pointer transition-colors ${
               day.value === currentDate
                 ? 'bg-purple-100 text-purple-900 border-b-4 border-purple-700'
                 : 'bg-gray-200 text-gray-500 hover:bg-gray-300'
@@ -230,7 +230,7 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
         <div className='relative'>
           <button
             onClick={() => setShowDatePicker(!showDatePicker)}
-            className='w-10 h-10 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'
+            className='w-14 h-10 bg-white border cursor-pointer border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'
           >
             <Calendar className='w-5 h-5' />
           </button>
@@ -302,10 +302,10 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
       </div>
 
       <div className='flex gap-2'>
-        <button className='w-10 h-10 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'>
+        <button className='w-10 h-10 border cursor-pointer border-gray-300 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'>
           <Filter className='w-5 h-5' />
         </button>
-        <button className='flex items-center gap-2 px-5 py-2 bg-white rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors'>
+        <button className='flex border cursor-pointer border-gray-300 items-center gap-2 px-5 py-2 bg-white rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors'>
           <Volume2 className='w-5 h-5' />
           <span>مباشر ({live})</span>
         </button>

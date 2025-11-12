@@ -3,8 +3,9 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Sketelon from './ui/Sketelon'
 import MatchFilter from './MatchFilter'
+import MatchModalView from './MatchModalView'
 
-const MatchCard = ({ match, gradient }) => (
+const MatchCard = ({ match, gradient, onClick }) => (
   <div
     className={`mt-1.5 p-[1px] rounded-2xl ${
       match.is_live ? 'animate-pulse-slow' : ''
@@ -14,6 +15,7 @@ const MatchCard = ({ match, gradient }) => (
         ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)'
         : gradient,
     }}
+    onClick={onClick}
   >
     <div className='cursor-pointer relative bg-white rounded-2xl h-[88px] p-2'>
       <div className='h-full flex flex-row justify-between items-center'>
@@ -99,7 +101,9 @@ const MatchesDisplay = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [live, setLive] = useState(0)
-  const baseMatchesRef = React.useRef([]) // Use ref to store base match data
+  const baseMatchesRef = React.useRef([])
+  const [opneModal, setOpenModal] = useState(false);
+  const [selectedMatch, setSelectedMatch] = useState(null);
 
   const todayValue = new Date().toISOString().split('T')[0]
 
@@ -325,13 +329,30 @@ const MatchesDisplay = () => {
                 key={match.match_id || idx}
                 match={match}
                 gradient={match.gradient}
+                onClick={() => {
+                  setOpenModal(true)
+                  setSelectedMatch({
+                    match_id: match?.match_id,
+                    home_team: match?.home_team.name,
+                    away_team: match?.away_team.name,
+                    home_team_logo: match?.home_team.logo,
+                    away_team_logo: match?.away_team.logo,
+                  })
+                }}
               />
             ))}
           </div>
         </div>
       ))}
+      <MatchModalView
+        open={opneModal}
+        setOpen={setOpenModal}
+        teams={selectedMatch}
+      />
     </div>
   )
 }
+
+
 
 export default MatchesDisplay
