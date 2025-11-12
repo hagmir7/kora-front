@@ -319,7 +319,7 @@ const MatchesDisplay = () => {
       {/* Date Selector */}
       <MatchFilter ChangeDate={(data) => setCurrentDate(data)} live={live} />
       {Object.keys(competitionGroups).map((competitionName) => (
-        <div key={competitionName} className='rounded-md mt-4 px-4'>
+        <div key={competitionName} className='rounded-md mt-3 px-4'>
           <div className='font-medium text-gray-500 uppercase mb-2 text-sm'>
             {competitionName}
           </div>

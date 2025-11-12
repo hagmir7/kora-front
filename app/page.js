@@ -32,14 +32,14 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen font-sans pt-5" dir="rtl">
+    <div className="bg-gray-50 min-h-screen font-sans pt-2 md:pt-5" dir="rtl">
       <main className="flex flex-row relative xl:px-5 bg-gray-50 max-w-7xl mx-auto">
         {/* Main Content */}
         <section className="w-full lg:w-2/3 lg:pr-4">
           
 
           {/* Champions League Section */}
-          <div className="rounded-md mt-4 px-4">
+          <div className="rounded-md md:mt-4 px-0 md:px-4">
             <MatchCard />
           </div>
         </section>

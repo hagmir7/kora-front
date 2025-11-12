@@ -301,7 +301,7 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
         </div>
       </div>
 
-      <div className='flex gap-2'>
+      <div className=' gap-2 hidden md:flex'>
         <button className='w-10 h-10 border cursor-pointer border-gray-300 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'>
           <Filter className='w-5 h-5' />
         </button>

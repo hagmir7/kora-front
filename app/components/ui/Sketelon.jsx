@@ -4,7 +4,7 @@ const Sketelon = () => {
   return (
     <div className='pb-8'>
       {[1, 2].map((section) => (
-        <div key={section} className='rounded-md mt-4 px-4'>
+        <div key={section} className='rounded-md md:mt-4 px-4'>
           {/* Competition name skeleton */}
           <div className='h-4 w-48 bg-gray-200 rounded animate-pulse mb-2'></div>
 

@@ -131,7 +131,7 @@ const MatchesDisplay = async () => {
   return (
     <div className='pb-8'>
       {Object.keys(competitionGroups).map((competitionName) => (
-        <div key={competitionName} className='rounded-md mt-4 px-4'>
+        <div key={competitionName} className='rounded-md mt-0 md:mt-4 px-4'>
           <div className='font-medium text-gray-500 uppercase mb-2 text-sm'>
             {competitionName}
           </div>
