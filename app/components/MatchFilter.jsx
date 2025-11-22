@@ -306,7 +306,7 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
         <button className='w-10 h-11 sm:w-10 sm:h-10 border cursor-pointer border-gray-300 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'>
           <Filter className='w-4 h-4 sm:w-5 sm:h-5' />
         </button>
-        <button className='flex border cursor-pointer border-gray-300 items-center gap-1 sm:gap-2 px-3 sm:px-5 py-1 sm:py-2 bg-white rounded-lg text-[10px] sm:text-sm font-medium hover:bg-gray-50 transition-colors'>
+        <button className='border hidden md:flex cursor-pointer border-gray-300 items-center gap-1 sm:gap-2 px-3 sm:px-5 py-1 sm:py-2 bg-white rounded-lg text-[10px] sm:text-sm font-medium hover:bg-gray-50 transition-colors'>
           <Volume2 className='w-4 h-4 sm:w-5 sm:h-5' />
           <span>مباشر ({live})</span>
         </button>
