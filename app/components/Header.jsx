@@ -3,9 +3,13 @@ import { useState } from 'react'
 import { Menu, X, Search, Home, Newspaper } from 'lucide-react'
 import { FaFootballBall } from 'react-icons/fa'
 import Link from 'next/link'
+import MobileMenu from './MobileMenu'
+import MobileSearch from './MobileSearch'
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
 
   const navItems = [
     {
@@ -116,9 +120,18 @@ const Header = () => {
               </div>
 
               {/* Mobile Search */}
-              <button className='md:hidden focus:outline-none focus-visible:outline-none'>
+              {/* Mobile Search */}
+              <button
+                className='md:hidden focus:outline-none'
+                onClick={() => setIsSearchOpen(true)}
+              >
                 <Search className='w-6 h-6 text-[#5C2D91]' />
               </button>
+
+              <MobileSearch
+                isOpen={isSearchOpen}
+                onClose={() => setIsSearchOpen(false)}
+              />
 
               {/* Mobile Menu Toggle */}
               <div className='flex content-center'>
@@ -149,24 +162,11 @@ const Header = () => {
       )}
 
       {/* Mobile Menu Panel */}
-      {isMobileMenuOpen && (
-        <div className='fixed top-[60px] right-0 w-64 h-screen bg-white shadow-lg z-20 p-4 lg:hidden'>
-          <div className='flex flex-col gap-4'>
-            {navItems.map((item) => (
-              <Link
-                key={item.id}
-                href={item.href}
-                className='flex items-center gap-3 p-3 hover:bg-gray-100 rounded-lg transition-colors'
-                target={item.external ? '_blank' : undefined}
-                rel={item.external ? 'noopener noreferrer' : undefined}
-              >
-                <span className='text-2xl'>{item.icon}</span>
-                <span className='text-[#5C2D91] font-medium'>{item.label}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
+      <MobileMenu
+        navItems={navItems}
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
     </header>
   )
 }
