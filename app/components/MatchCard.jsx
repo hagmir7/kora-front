@@ -17,34 +17,34 @@ const MatchCard = ({ match, gradient, onClick }) => (
     }}
     onClick={onClick}
   >
-    <div className='cursor-pointer relative bg-white rounded-2xl h-[88px] p-2'>
+    <div className='cursor-pointer relative bg-white rounded-2xl p-2 sm:p-3 h-[70px] sm:h-[88px]'>
       <div className='h-full flex flex-row justify-between items-center'>
         {/* Home Team */}
         <div className='flex w-2/5 flex-row justify-end items-center'>
-          <div className='flex flex-col items-center w-20'>
-            <div className='w-10 h-10 relative bg-gray-100 rounded-full flex items-center justify-center'>
+          <div className='flex flex-col items-center w-16 sm:w-20'>
+            <div className='w-8 h-8 sm:w-10 sm:h-10 relative bg-gray-100 rounded-full flex items-center justify-center'>
               <Image
                 src={match.home_team.logo}
-                width={40}
-                height={40}
+                width={32}
+                height={32}
                 alt='Home team logo'
                 className='object-contain'
               />
             </div>
-            <div className='mt-1.5 text-xs text-center line-clamp-1'>
+            <div className='mt-1 text-[10px] sm:text-xs text-center line-clamp-1'>
               {match.home_team.name}
             </div>
           </div>
-          <div className='score flex w-9 justify-center text-2xl font-bold'>
+          <div className='score flex w-7 sm:w-9 justify-center text-xl sm:text-2xl font-bold'>
             {match.home_team.score || '-'}
           </div>
         </div>
 
         {/* Status/Time */}
-        <div className='flex flex-col justify-center items-center w-1/3 text-xs'>
+        <div className='flex flex-col justify-center items-center w-1/3 text-[10px] sm:text-xs'>
           {match.is_live ? (
             <div className='flex flex-col items-center'>
-              <span className='w-8 h-0.5 bg-green-500 rounded mb-1 animate-pulse'></span>
+              <span className='w-6 h-0.5 bg-green-500 rounded mb-1 animate-pulse'></span>
               <span className='text-green-600 text-sm font-bold animate-pulse'>
                 {match.match_minute || 'LIVE'}
               </span>
@@ -58,7 +58,7 @@ const MatchCard = ({ match, gradient, onClick }) => (
               <div className='text-gray-400 text-sm font-bold'>
                 {(() => {
                   const saudiDateString = match.match_time
-                  const matchDate = new Date(saudiDateString + ' GMT+0300') // Saudi Arabia is UTC+3
+                  const matchDate = new Date(saudiDateString + ' GMT+0300') // Saudi Arabia UTC+3
                   const localTime = matchDate.toLocaleTimeString('en-US', {
                     hour: '2-digit',
                     minute: '2-digit',
@@ -73,21 +73,21 @@ const MatchCard = ({ match, gradient, onClick }) => (
 
         {/* Away Team */}
         <div className='flex w-2/5 flex-row-reverse justify-end items-center'>
-          <div className='flex flex-col items-center w-20'>
-            <div className='w-10 h-10 relative bg-gray-100 rounded-full flex items-center justify-center'>
+          <div className='flex flex-col items-center w-16 sm:w-20'>
+            <div className='w-8 h-8 sm:w-10 sm:h-10 relative bg-gray-100 rounded-full flex items-center justify-center'>
               <Image
                 src={match.away_team.logo}
-                width={40}
-                height={40}
+                width={32}
+                height={32}
                 alt='Away team logo'
                 className='object-contain'
               />
             </div>
-            <div className='mt-1.5 text-xs text-center line-clamp-1'>
+            <div className='mt-1 text-[10px] sm:text-xs text-center line-clamp-1'>
               {match.away_team.name}
             </div>
           </div>
-          <div className='score flex w-9 justify-center text-2xl font-bold'>
+          <div className='score flex w-7 sm:w-9 justify-center text-xl sm:text-2xl font-bold'>
             {match.away_team.score || '-'}
           </div>
         </div>

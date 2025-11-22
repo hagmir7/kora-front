@@ -36,10 +36,9 @@ export default function Home() {
       <main className="flex flex-row relative xl:px-5 bg-gray-50 max-w-7xl mx-auto">
         {/* Main Content */}
         <section className="w-full lg:w-2/3 lg:pr-4">
-          
-
           {/* Champions League Section */}
           <div className="rounded-md md:mt-4 px-0 md:px-4">
+            <h1 className='px-2'>جدول المباريات</h1>
             <MatchCard />
           </div>
         </section>
@@ -49,7 +48,7 @@ export default function Home() {
           {/* Latest Videos */}
           <div className="bg-white shadow-sm mb-4 rounded-[22px]">
             <header style={{ backgroundImage: "url(https://prod-media.beinsports.com/image/hero_editorial_background.png)" }} className="bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-t-[22px] px-4 py-4">
-              <h1 className="text-lg font-semibold">أحدث مقاطع الفيديو</h1>
+              <h2 className="text-lg font-semibold">أحدث مقاطع الفيديو</h2>
             </header>
             <div className="px-4 pt-2">
               {videos.map((video, idx) => (

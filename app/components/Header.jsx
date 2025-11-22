@@ -29,10 +29,10 @@ const Header = () => {
   ]
 
   return (
-    <header className='sticky top-0 lg:shadow-[0_5px_20px_rgba(0,0,0,0.05)] z-[100]'>
+    <header className='sticky top-0 shadow-sm z-[100]'>
       <nav className='bg-white relative z-10'>
         <div className='flex safe-pt-2 items-center justify-between md:py-2.5 md:safe-pt-2.5 px-3 md:safe-h-[46px] lg:px-[3rem] xl:px-[8.75rem]'>
-          <div className='flex w-full h-[40px] justify-between items-center'>
+          <div className='flex w-full h-[50px] justify-between items-center'>
             {/* Mobile Back Button */}
             <div className='content-center flex lg:hidden gap-x-3 md:gap-x-0'>
               <button
@@ -68,7 +68,7 @@ const Header = () => {
                 <div className='relative w-full h-full'>
                   <div className='absolute inset-0 flex items-center justify-start'>
                     <span className='text-[#5C2D91] font-bold text-2xl'>
-                      فيفا
+                      كــــــوراتـاب
                     </span>
                   </div>
                 </div>

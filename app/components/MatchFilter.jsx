@@ -198,79 +198,78 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
   }
 
   return (
-    <div className='flex flex-row justify-between items-center px-4 py-4'>
-      <div className='flex flex-row items-center gap-2'>
+    <div className='flex flex-row justify-between items-center px-2 sm:px-4 py-2 sm:py-4'>
+      <div className='flex flex-row items-center gap-1 sm:gap-2'>
         {dates.map((day) => (
           <button
             key={day.value}
             onClick={() => handleDateChange(day.value)}
-            className={`w-[70px] flex flex-col items-center px-1.5 py-2 rounded-t cursor-pointer transition-colors ${
+            className={`flex flex-col items-center px-1 py-1 sm:px-1.5 sm:py-2 rounded-t cursor-pointer transition-colors min-w-[60px] sm:min-w-[70px] ${
               day.value === currentDate
                 ? 'bg-purple-100 text-purple-900 border-b-4 border-purple-700'
                 : 'bg-gray-200 text-gray-500 hover:bg-gray-300'
             }`}
           >
-            <span className='text-sm font-medium uppercase'>{day.label}</span>
-            <span className='text-xs'>{day.date}</span>
+            <span className='text-[13px] sm:text-sm font-medium uppercase'>
+              {day.label}
+            </span>
+            <span className='text-[11px] sm:text-xs'>{day.date}</span>
           </button>
         ))}
 
-        {/* Custom date display button */}
         {!isPresetDate && (
           <button
             onClick={() => setShowDatePicker(true)}
-            className='w-[70px] flex flex-col items-center px-1.5 py-2 rounded-t bg-purple-100 text-purple-900 border-b-4 border-purple-700'
+            className='flex flex-col items-center px-1 py-1 sm:px-1.5 sm:py-2 rounded-t bg-purple-100 text-purple-900 border-b-4 border-purple-700 min-w-[60px] sm:min-w-[70px]'
           >
-            <span className='text-sm font-medium'>مخصص</span>
-            <span className='text-xs'>{getFormattedCustomDate()}</span>
+            <span className='text-[13px] sm:text-sm font-medium'>مخصص</span>
+            <span className='text-[11px] sm:text-xs'>
+              {getFormattedCustomDate()}
+            </span>
           </button>
         )}
 
-        {/* Calendar button with date picker */}
         <div className='relative'>
           <button
             onClick={() => setShowDatePicker(!showDatePicker)}
-            className='w-14 h-10 hidden bg-white border cursor-pointer border-gray-300 rounded-lg md:flex items-center justify-center hover:bg-gray-50 transition-colors'
+            className='w-10 h-11 sm:w-14 sm:h-10 bg-white border cursor-pointer border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'
           >
-            <Calendar className='w-5 h-5' />
+            <Calendar className='w-4 h-4 sm:w-5 sm:h-5' />
           </button>
 
-          {/* Beautiful Custom Date Picker */}
           {showDatePicker && (
             <>
               <div
                 className='fixed inset-0 z-10'
                 onClick={() => setShowDatePicker(false)}
               />
-              <div className='absolute top-12 left-0 z-20 bg-white rounded-xl shadow-2xl p-4 border border-gray-200 w-80'>
+              <div className='absolute top-10 sm:top-12 left-0 z-40 bg-white rounded-xl shadow-2xl p-3 sm:p-4 border border-gray-200 w-64 sm:w-80'>
                 {/* Header */}
-                <div className='flex items-center justify-between mb-4'>
+                <div className='flex items-center justify-between mb-3 sm:mb-4'>
                   <button
                     onClick={goToNextMonth}
-                    className='p-2 hover:bg-gray-100 rounded-lg transition-colors'
+                    className='p-1 sm:p-2 hover:bg-gray-100 rounded-lg transition-colors'
                   >
-                    <ChevronRight className='w-5 h-5' />
+                    <ChevronRight className='w-4 h-4 sm:w-5 sm:h-5' />
                   </button>
-                  <div className='text-center'>
-                    <div className='font-bold text-lg'>
-                      {monthsArabic[calendarDate.getMonth()]}{' '}
-                      {calendarDate.getFullYear()}
-                    </div>
+                  <div className='text-center text-sm sm:text-lg font-bold'>
+                    {monthsArabic[calendarDate.getMonth()]}{' '}
+                    {calendarDate.getFullYear()}
                   </div>
                   <button
                     onClick={goToPreviousMonth}
-                    className='p-2 hover:bg-gray-100 rounded-lg transition-colors'
+                    className='p-1 sm:p-2 hover:bg-gray-100 rounded-lg transition-colors'
                   >
-                    <ChevronLeft className='w-5 h-5' />
+                    <ChevronLeft className='w-4 h-4 sm:w-5 sm:h-5' />
                   </button>
                 </div>
 
                 {/* Weekday headers */}
-                <div className='grid grid-cols-7 gap-1 mb-2'>
+                <div className='grid grid-cols-7 gap-0.5 sm:gap-1 mb-1 sm:mb-2'>
                   {weekdaysShortArabic.map((day) => (
                     <div
                       key={day}
-                      className='w-10 h-8 flex items-center justify-center text-xs font-semibold text-gray-600'
+                      className='w-8 h-6 sm:w-10 sm:h-8 flex items-center justify-center text-[8px] sm:text-xs font-semibold text-gray-600'
                     >
                       {day}
                     </div>
@@ -278,19 +277,21 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
                 </div>
 
                 {/* Calendar grid */}
-                <div className='grid grid-cols-7 gap-1'>{renderCalendar()}</div>
+                <div className='grid grid-cols-7 gap-0.5 sm:gap-1'>
+                  {renderCalendar()}
+                </div>
 
                 {/* Quick actions */}
-                <div className='flex gap-2 mt-4 pt-4 border-t'>
+                <div className='flex gap-1 sm:gap-2 mt-2 sm:mt-4 pt-2 sm:pt-4 border-t'>
                   <button
                     onClick={() => handleCustomDateSelect(new Date())}
-                    className='flex-1 px-3 py-2 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors'
+                    className='flex-1 px-2 py-1 sm:px-3 sm:py-2 bg-purple-600 text-white rounded-lg text-[10px] sm:text-sm font-medium hover:bg-purple-700 transition-colors'
                   >
                     اليوم
                   </button>
                   <button
                     onClick={() => setShowDatePicker(false)}
-                    className='flex-1 px-3 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300 transition-colors'
+                    className='flex-1 px-2 py-1 sm:px-3 sm:py-2 bg-gray-200 text-gray-700 rounded-lg text-[10px] sm:text-sm font-medium hover:bg-gray-300 transition-colors'
                   >
                     إلغاء
                   </button>
@@ -301,12 +302,12 @@ const MatchFilter = ({ ChangeDate, live=0 }) => {
         </div>
       </div>
 
-      <div className=' gap-2 hidden md:flex'>
-        <button className='w-10 h-10 border cursor-pointer border-gray-300 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'>
-          <Filter className='w-5 h-5' />
+      <div className='gap-1 sm:gap-2 flex'>
+        <button className='w-10 h-11 sm:w-10 sm:h-10 border cursor-pointer border-gray-300 bg-white rounded-lg flex items-center justify-center hover:bg-gray-50 transition-colors'>
+          <Filter className='w-4 h-4 sm:w-5 sm:h-5' />
         </button>
-        <button className='flex border cursor-pointer border-gray-300 items-center gap-2 px-5 py-2 bg-white rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors'>
-          <Volume2 className='w-5 h-5' />
+        <button className='flex border cursor-pointer border-gray-300 items-center gap-1 sm:gap-2 px-3 sm:px-5 py-1 sm:py-2 bg-white rounded-lg text-[10px] sm:text-sm font-medium hover:bg-gray-50 transition-colors'>
+          <Volume2 className='w-4 h-4 sm:w-5 sm:h-5' />
           <span>مباشر ({live})</span>
         </button>
       </div>

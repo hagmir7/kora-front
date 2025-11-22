@@ -53,7 +53,7 @@ export default function Home() {
               }}
               className='bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-t-[22px] px-4 py-4'
             >
-              <h1 className='text-lg font-semibold'>أحدث مقاطع الفيديو</h1>
+              <h2 className='text-lg font-semibold'>أحدث مقاطع الفيديو</h2>
             </header>
             <div className='px-4 pt-2'>
               {videos.map((video, idx) => (
