@@ -2,7 +2,24 @@
 const nextConfig = {
   /* config options here */
   images: {
-    domains: ['prod-media.beinsports.com', 'jdwel.com', 'assets-us-01.kc-usercontent.com', 'www.beinsports.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'prod-media.beinsports.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'jdwel.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets-us-01.kc-usercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.beinsports.com',
+      },
+    ],
   },
 };
 
