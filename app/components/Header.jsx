@@ -33,7 +33,7 @@ const Header = () => {
 
     {
       id: 'news',
-      label: 'أخبار الرياضة',
+      label: 'بطولات',
       href: '/news',
       icon: <Crown size={20} className='text-[#5C2D91]' />,
     },
