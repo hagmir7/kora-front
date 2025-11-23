@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Menu, X, Search, Home, Newspaper } from 'lucide-react'
+import { Menu, X, Search, Home, Newspaper, Crown } from 'lucide-react'
 import { FaFootballBall } from 'react-icons/fa'
 import Link from 'next/link'
 import MobileMenu from './MobileMenu'
@@ -19,16 +19,23 @@ const Header = () => {
       icon: <Home size={20} className='text-[#5C2D91]' />,
     },
     {
-      id: 'sports',
+      id: 'todya',
       label: 'مباريات اليوم',
       icon: <FaFootballBall size={20} className='text-[#5C2D91]' />,
       href: '/today-matchs',
     },
     {
-      id: 'video',
+      id: 'news',
       label: 'أخبار الرياضة',
       href: '/news',
       icon: <Newspaper size={20} className='text-[#5C2D91]' />,
+    },
+
+    {
+      id: 'news',
+      label: 'أخبار الرياضة',
+      href: '/news',
+      icon: <Crown size={20} className='text-[#5C2D91]' />,
     },
   ]
 
