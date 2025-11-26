@@ -1,5 +1,6 @@
 import FollowUs from '@/app/components/FollowUs'
-import NewsCardGroup from '@/app/components/NewCardGroup'
+import NewsContainer from '@/app/components/NewsContainer'
+import NewsCardGroup from '@/app/components/NewsContainer'
 import VideoCard from '@/app/components/VideoCard'
 import { ChevronDown } from 'lucide-react'
 
@@ -38,7 +39,7 @@ export default function Home() {
           {/* Champions League Section */}
           <div className='rounded-md px-4'>
             {/* <MatchCard /> */}
-            <NewsCardGroup />
+            <NewsContainer />
           </div>
         </section>
 

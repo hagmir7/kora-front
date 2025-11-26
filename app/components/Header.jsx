@@ -5,6 +5,7 @@ import { FaFootballBall } from 'react-icons/fa'
 import Link from 'next/link'
 import MobileMenu from './MobileMenu'
 import MobileSearch from './MobileSearch'
+import FootballIcon from './icons/FootballIcon'
 
 
 const Header = () => {
@@ -21,8 +22,8 @@ const Header = () => {
     {
       id: 'todya',
       label: 'مباريات اليوم',
-      icon: <FaFootballBall size={20} className='text-[#5C2D91]' />,
-      href: '/today-matchs',
+      icon: <FootballIcon size={20} className='text-[#5C2D91]' />,
+      href: '/',
     },
     {
       id: 'news',
@@ -32,9 +33,9 @@ const Header = () => {
     },
 
     {
-      id: 'news',
+      id: 'compititions',
       label: 'بطولات',
-      href: '/news',
+      href: '/compititions',
       icon: <Crown size={20} className='text-[#5C2D91]' />,
     },
   ]
@@ -79,7 +80,7 @@ const Header = () => {
                 <div className='relative w-full h-full'>
                   <div className='absolute inset-0 flex items-center justify-start'>
                     <span className='text-[#5C2D91] font-bold text-2xl'>
-                      كــــــوراتـاب
+                      كــــــورة تـاب
                     </span>
                   </div>
                 </div>

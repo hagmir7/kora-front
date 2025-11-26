@@ -1,9 +1,30 @@
-[00:00:01.736] Server  LOG      ✓ Ready in 1201ms
-[00:00:06.595] Server  LOG      ○ Compiling / ...
-[00:00:16.903] Server  WARN     ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
-[00:00:19.074] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:00:21.237] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. news
-[00:00:22.246] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:01.715] Server  LOG      ✓ Ready in 1087ms
+[00:00:04.775] Server  LOG      ○ Compiling /news ...
+[00:00:12.059] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:00:12.523] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:00:13.940] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:00:48.034] Server  LOG      ✓ Compiled in 98ms
+[00:00:49.228] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:00:51.753] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:01:41.649] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:01:44.451] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:09.160] Server  ERROR   BlogCard: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+[00:02:09.517] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:12.130] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:15.231] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:16.546] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:23.021] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:23.898] Server  LOG      ✓ Compiled in 120ms
+[00:02:27.865] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:32.074] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:02:32.198] Server  LOG      ✓ Compiled in 78ms
+[00:02:32.254] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
+[00:02:33.281] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:02:33.289] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:02:33.310] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:02:33.311] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:02:35.455] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:02:35.985] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -21,7 +42,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/news" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -29,10 +50,6 @@ It can also happen if the client has a browser extension installed which messes 
                     <SegmentViewNode type="layout" pagePath="layout.js">
                       <SegmentTrieNode>
                       <link>
-                      <script>
-                      <script>
-                      <script>
-                      <script>
                       <script>
                       <script>
                       <script>
@@ -45,11 +62,141 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:00:27.265] Browser WARN    Image with src "https://jdwel.com/image/teams/zam_zesco_united.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:28.256] Browser WARN    Image with src "https://jdwel.com/image/teams/por_fafe.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:28.256] Browser WARN    Image with src "https://jdwel.com/image/teams/por_silves_fc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:28.256] Browser WARN    Image with src "https://jdwel.com/image/teams/por_caldas.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:31.257] Browser WARN    Image with src "https://jdwel.com/image/teams/ser_mladost_lu__ani.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:32.254] Browser WARN    Image with src "https://jdwel.com/image/teams/cze_karvina.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:39.050] Server  LOG      ✓ Compiled in 257ms
-[00:00:39.257] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. news
+[00:05:11.268] Server  LOG      ✓ Compiled in 171ms
+[00:07:04.946] Server  LOG      ✓ Compiled in 158ms
+[00:07:13.150] Server  LOG      ✓ Compiled in 144ms
+[00:07:21.670] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:21.672] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:21.673] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:21.674] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:24.949] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:24.951] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:24.952] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:07:24.953] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:27.038] Server  LOG      ✓ Compiled in 175ms
+[00:09:31.894] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:31.914] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:31.916] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:32.032] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:32.137] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:09:32.511] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:32.528] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:32.608] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:32.609] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:32.623] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:09:33.698] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/news" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="ar" dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1264.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:09:53.655] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:09:58.606] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:58.622] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:58.624] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:58.626] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:09:58.707] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:10:27.083] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:10:31.122] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:31.135] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:31.138] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:31.139] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:31.212] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:10:34.437] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:34.440] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:34.441] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:34.444] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:34.522] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:10:41.444] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:41.454] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:41.456] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:41.458] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:10:41.540] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:14:56.313] Server  ERROR    ⨯ TypeError: blogs.map is not a function
+[00:14:57.769] Browser ERROR   uncaughtError: TypeError: blogs.map is not a function
+[00:15:21.728] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:21.731] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:21.776] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:21.778] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:22.356] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:15:25.998] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/news" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="ar" dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1264.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:15:29.439] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:29.441] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:29.447] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:29.455] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:29.536] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:15:41.137] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:15:51.639] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:51.642] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:51.643] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:51.645] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[00:15:51.735] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null

@@ -184,17 +184,17 @@ function NewsCardGroup() {
                         children: "كرة القدم"
                     }, void 0, false, {
                         fileName: "[project]/app/components/NewCardGroup.jsx",
-                        lineNumber: 127,
+                        lineNumber: 130,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/NewCardGroup.jsx",
-                    lineNumber: 123,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/NewCardGroup.jsx",
-                lineNumber: 115,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -216,17 +216,17 @@ function NewsCardGroup() {
                                     strokeWidth: 2
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/NewCardGroup.jsx",
-                                    lineNumber: 147,
+                                    lineNumber: 150,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/NewCardGroup.jsx",
-                                lineNumber: 142,
+                                lineNumber: 145,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/NewCardGroup.jsx",
-                            lineNumber: 138,
+                            lineNumber: 141,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -242,17 +242,17 @@ function NewsCardGroup() {
                                         ...item
                                     }, idx, false, {
                                         fileName: "[project]/app/components/NewCardGroup.jsx",
-                                        lineNumber: 163,
+                                        lineNumber: 166,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/components/NewCardGroup.jsx",
-                                lineNumber: 161,
+                                lineNumber: 164,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/NewCardGroup.jsx",
-                            lineNumber: 156,
+                            lineNumber: 159,
                             columnNumber: 11
                         }, this),
                         canScrollRight && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -269,28 +269,28 @@ function NewsCardGroup() {
                                     strokeWidth: 3
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/NewCardGroup.jsx",
-                                    lineNumber: 181,
+                                    lineNumber: 184,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/NewCardGroup.jsx",
-                                lineNumber: 176,
+                                lineNumber: 179,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/NewCardGroup.jsx",
-                            lineNumber: 170,
+                            lineNumber: 173,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/NewCardGroup.jsx",
-                    lineNumber: 135,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/NewCardGroup.jsx",
-                lineNumber: 134,
+                lineNumber: 137,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -300,7 +300,7 @@ function NewsCardGroup() {
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/NewCardGroup.jsx",
-        lineNumber: 113,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
 }
