@@ -2,6 +2,7 @@ import FollowUs from '@/app/components/FollowUs'
 import NewsContainer from '@/app/components/NewsContainer'
 import NewsCardGroup from '@/app/components/NewsContainer'
 import VideoCard from '@/app/components/VideoCard'
+import Newsletter from '@/components/Newsletter'
 import { ChevronDown } from 'lucide-react'
 
 export default function Home() {
@@ -34,18 +35,13 @@ export default function Home() {
   return (
     <div className='bg-gray-50 min-h-screen font-sans pt-5' dir='rtl'>
       <main className='flex flex-row relative xl:px-5 bg-gray-50 max-w-7xl mx-auto'>
-        {/* Main Content */}
         <section className='w-full lg:w-2/3 lg:pr-4'>
-          {/* Champions League Section */}
           <div className='rounded-md px-4'>
-            {/* <MatchCard /> */}
             <NewsContainer />
           </div>
         </section>
 
-        {/* Sidebar */}
         <aside className='hidden lg:flex flex-col lg:w-1/3 bg-gray-50'>
-          {/* Latest Videos */}
           <div className='bg-white shadow-sm mb-4 rounded-[22px]'>
             <header
               style={{
@@ -70,31 +66,7 @@ export default function Home() {
           </div>
 
           {/* Newsletter */}
-          <div className='rounded-[22px] bg-white p-5 shadow-sm mb-4'>
-            <div className="bg-[url('/images/newsletter.png')] bg-right-top bg-no-repeat">
-              <div className=''>
-                <div className='font-bold text-[22px] mb-2'>
-                  انضم إلى قائمة نشرتنا الإخبارية
-                </div>
-                <div className='text-base pb-2'>
-                  اشترك للحصول على محتوى حصري وتحديثات منتقاة
-                </div>
-              </div>
-            </div>
-            <div className='w-full mt-3'>
-              <input
-                type='email'
-                placeholder='أدخل بريدك الإلكتروني'
-                className='w-full px-4 py-2 rounded-lg bg-gray-50 border border-gray-200 focus:border-purple-700 focus:outline-none'
-              />
-              <button
-                className='w-full mt-4 py-2 bg-gray-200 text-gray-400 rounded-md font-medium'
-                disabled
-              >
-                إشترك
-              </button>
-            </div>
-          </div>
+          <Newsletter />
 
           {/* Follow Us */}
           <FollowUs />

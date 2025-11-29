@@ -50,7 +50,7 @@ const GoalList = ({ goals, ownGoals = [], teamType = 'home' }) => {
           </div>
           <span
             className='text-yellow-400 text-xs md:text-sm font-bold'
-            dir='ltr'
+            dir='rtl'
           >
             {goal.time}
           </span>
@@ -86,7 +86,7 @@ const GoalList = ({ goals, ownGoals = [], teamType = 'home' }) => {
           </div>
           <span
             className='text-yellow-400 text-xs md:text-sm font-bold'
-            dir='ltr'
+            dir='rtl'
           >
             {goal.time}
           </span>

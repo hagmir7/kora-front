@@ -439,7 +439,7 @@ const Header = ()=>{
                                 className: "flex justify-start items-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        className: "flex relative h-8 w-32 ltr:md:mr-8 rtl:md:ml-8 gap-x-8 lg:w-36 ltr:xl:mr-[34px] rtl:xl:ml-[34px]",
+                                        className: "flex relative h-8 w-32 rtl:md:mr-8 rtl:md:ml-8 gap-x-8 lg:w-36 rtl:xl:mr-[34px] rtl:xl:ml-[34px]",
                                         href: "/",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "relative w-full h-full",
@@ -471,7 +471,7 @@ const Header = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "hidden sm:h-fit sm:max-h-fit h-[86px] gap-x-8 max-h-[86px] bg-white justify-between p-0 z-0 lg:flex lg:p-0 lg:z-0",
                                         children: navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative flex lg:flex min-h-8 p-1.5 ltr:last:mr-0 rtl:last:ml-0",
+                                                className: "relative flex lg:flex min-h-8 p-1.5 rtl:last:mr-0 rtl:last:ml-0",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     className: "flex",
                                                     href: item.href,
@@ -481,7 +481,7 @@ const Header = ()=>{
                                                         className: "flex flex-col items-center justify-center gap-y-1 lg:flex-row",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center justify-center w-[33px] h-[33px] lg:w-5 lg:h-5 lg:mb-0 ltr:lg:mr-3 rtl:lg:ml-3",
+                                                                className: "flex items-center justify-center w-[33px] h-[33px] lg:w-5 lg:h-5 lg:mb-0 rtl:lg:mr-3 rtl:lg:ml-3",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "text-xl",
                                                                     children: item.icon

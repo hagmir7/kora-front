@@ -74,7 +74,7 @@ const Header = () => {
             {/* Logo and Navigation */}
             <div className='flex justify-start items-center'>
               <Link
-                className='flex relative h-8 w-32 ltr:md:mr-8 rtl:md:ml-8 gap-x-8 lg:w-36 ltr:xl:mr-[34px] rtl:xl:ml-[34px]'
+                className='flex relative h-8 w-32 rtl:md:mr-8 rtl:md:ml-8 gap-x-8 lg:w-36 rtl:xl:mr-[34px] rtl:xl:ml-[34px]'
                 href='/'
               >
                 <div className='relative w-full h-full'>
@@ -91,7 +91,7 @@ const Header = () => {
                 {navItems.map((item) => (
                   <div
                     key={item.id}
-                    className='relative flex lg:flex min-h-8 p-1.5 ltr:last:mr-0 rtl:last:ml-0'
+                    className='relative flex lg:flex min-h-8 p-1.5 rtl:last:mr-0 rtl:last:ml-0'
                   >
                     <Link
                       className='flex'
@@ -100,7 +100,7 @@ const Header = () => {
                       rel={item.external ? 'noopener noreferrer' : undefined}
                     >
                       <div className='flex flex-col items-center justify-center gap-y-1 lg:flex-row'>
-                        <div className='flex items-center justify-center w-[33px] h-[33px] lg:w-5 lg:h-5 lg:mb-0 ltr:lg:mr-3 rtl:lg:ml-3'>
+                        <div className='flex items-center justify-center w-[33px] h-[33px] lg:w-5 lg:h-5 lg:mb-0 rtl:lg:mr-3 rtl:lg:ml-3'>
                           <span className='text-xl'>{item.icon}</span>
                         </div>
                         <span className='w-12 truncate font-medium text-[10px] text-center whitespace-nowrap lg:text-[14px] rtl:lg:text-[16px] lg:leading-4 lg:w-auto lg:font-medium lg:uppercase text-gray-500 lg:text-[#5C2D91]'>

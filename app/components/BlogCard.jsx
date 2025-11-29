@@ -20,14 +20,14 @@ const BlogCard = ({ blog }) => {
         </div>
 
         {/* Content */}
-        <div className='flex justify-center flex-col rtl:pr-2.5 rtl:pl-6 lg:px-4 lg:pt-[10px] bg-white px-[4px] py-[8px]'>
+        <div className='flex justify-center flex-col bg-white px-3 py-2'>
           {/* Category */}
-          <div className='block items-center font-medium text-[11px] text-[#5C2D91] lg:text-[12px] rtl:text-[12px] lg:rtl:text-[14px] leading-[120%] rtl:leading-[140%] mb-1 lg:mb-[10px] truncate'>
+          <div className='block items-center font-medium text-[11px] text-[#5C2D91] lg:text-[12px] rtl:text-[12px] lg:rtl:text-[14px] leading-[120%] rtl:leading-[140%] mb-1 truncate'>
             {blog.category.name}
           </div>
 
           {/* Title */}
-          <div className='line-clamp-2 text-[12px] rtl:text-[14px] lg:text-[16px] font-medium text-[#1A1A1A] break-words leading-[120%] rtl:leading-[140%]'>
+          <div className='line-clamp-2 text-sm rtl:text-sm font-semibold lg:text-bas text-black break-words leading-[120%] rtl:leading-[140%]'>
             {blog.title}
           </div>
         </div>

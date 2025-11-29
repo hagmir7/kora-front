@@ -123,11 +123,18 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+    [dir="rtl"] {
+      direction: rtl;
+    }
 }
-
-
 
 #match-modal [data-radix-dialog-overlay] {
   background-color: transparent !important;
   backdrop-filter: none !important;
+}
+
+html[dir="rtl"] * {
+  direction: rtl;
+  text-align: right;
 }

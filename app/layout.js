@@ -1,16 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import "@fontsource/alexandria"; // Defaults to weight 400
-import "@fontsource/alexandria/400.css"; // Specify weight
-// import "@fontsource/alexandria/400-italic.css"; // Specify weight and style
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-// app/head.js (Next.js 13+ / app directory)
+import "@fontsource/alexandria"; 
+import "@fontsource/alexandria/400.css";
 
 export const metadata = {
   title: "Koratab - نتائج و جداول كرة القدم المباشرة",
@@ -55,19 +47,14 @@ export const metadata = {
 };
 
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html dir="rtl">
       <body
         className={`antialiased`}
       >
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>

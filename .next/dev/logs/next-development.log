@@ -1,30 +1,10 @@
-[00:00:01.715] Server  LOG      ✓ Ready in 1087ms
-[00:00:04.775] Server  LOG      ○ Compiling /news ...
-[00:00:12.059] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:00:12.523] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:00:13.940] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:00:48.034] Server  LOG      ✓ Compiled in 98ms
-[00:00:49.228] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:00:51.753] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:01:41.649] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:01:44.451] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:09.160] Server  ERROR   BlogCard: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
-[00:02:09.517] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:12.130] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:15.231] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:16.546] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:23.021] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:23.898] Server  LOG      ✓ Compiled in 120ms
-[00:02:27.865] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:32.074] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:02:32.198] Server  LOG      ✓ Compiled in 78ms
-[00:02:32.254] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {id, name, slug}). If you meant to render a collection of children, use an array instead.
-[00:02:33.281] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:02:33.289] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:02:33.310] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:02:33.311] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:02:35.455] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:02:35.985] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.965] Server  LOG      ✓ Ready in 602ms
+[00:00:04.029] Server  LOG      ○ Compiling /app/blogs/create ...
+[00:00:09.513] Server  ERROR    ⨯ ReferenceError: useState is not defined
+[00:00:11.135] Browser ERROR   uncaughtError: ReferenceError: useState is not defined
+[00:00:36.027] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:36.047] Server  LOG      ✓ Compiled in 141ms
+[00:00:38.378] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -42,7 +22,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/news" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/app/blogs..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -54,7 +34,7 @@ It can also happen if the client has a browser extension installed which messes 
                       <script>
                       <script>
                       <RootLayout>
-                        <html lang="ar" dir="rtl">
+                        <html dir="rtl">
                           <body
                             className="antialiased"
 -                           data-new-gr-c-s-check-loaded="14.1264.0"
@@ -62,29 +42,38 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:05:11.268] Server  LOG      ✓ Compiled in 171ms
-[00:07:04.946] Server  LOG      ✓ Compiled in 158ms
-[00:07:13.150] Server  LOG      ✓ Compiled in 144ms
-[00:07:21.670] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:21.672] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:21.673] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:21.674] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:24.949] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:24.951] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:24.952] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:07:24.953] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:27.038] Server  LOG      ✓ Compiled in 175ms
-[00:09:31.894] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:31.914] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:31.916] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:32.032] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:32.137] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:09:32.511] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:32.528] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:32.608] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:32.609] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:32.623] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:09:33.698] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:38.378] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:01:41.730] Server  LOG      ✓ Compiled in 102ms
+[00:01:49.390] Server  LOG      ✓ Compiled in 97ms
+[00:02:50.487] Server  LOG      ✓ Compiled in 97ms
+[00:04:30.974] Server  LOG      ✓ Compiled in 95ms
+[00:04:36.039] Server  LOG      ✓ Compiled in 87ms
+[00:05:24.047] Server  LOG      ✓ Compiled in 595ms
+[00:05:37.418] Server  LOG      ✓ Compiled in 90ms
+[00:05:53.427] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:07:06.248] Server  LOG      ✓ Compiled in 99ms
+[00:07:32.582] Server  LOG      ✓ Compiled in 86ms
+[00:09:18.483] Server  LOG      ✓ Compiled in 114ms
+[00:09:22.150] Server  LOG      ✓ Compiled in 104ms
+[00:09:30.772] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:09:55.966] Server  LOG      ✓ Compiled in 91ms
+[00:10:49.530] Server  LOG      ✓ Compiled in 167ms
+[00:10:55.958] Server  LOG      ✓ Compiled in 78ms
+[00:11:13.979] Server  LOG      ✓ Compiled in 114ms
+[00:11:23.331] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:11:35.353] Server  LOG      ✓ Compiled in 95ms
+[00:11:41.568] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:20:42.905] Server  LOG      ✓ Compiled in 233ms
+[00:22:03.138] Server  LOG      ✓ Compiled in 120ms
+[00:22:03.822] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:22:10.851] Server  LOG      ✓ Compiled in 87ms
+[00:22:11.818] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:22:20.178] Server  LOG      ✓ Compiled in 78ms
+[00:22:20.832] Browser ERROR   uncaughtError: ReferenceError: user is not defined
+[00:22:24.153] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:24.177] Server  LOG      ✓ Compiled in 96ms
+[00:22:24.931] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:22:28.120] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -102,7 +91,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/news" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/app/blogs..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -114,7 +103,7 @@ It can also happen if the client has a browser extension installed which messes 
                       <script>
                       <script>
                       <RootLayout>
-                        <html lang="ar" dir="rtl">
+                        <html dir="rtl">
                           <body
                             className="antialiased"
 -                           data-new-gr-c-s-check-loaded="14.1264.0"
@@ -122,36 +111,44 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:09:53.655] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:09:58.606] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:58.622] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:58.624] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:58.626] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:09:58.707] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:10:27.083] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:10:31.122] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:31.135] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:31.138] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:31.139] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:31.212] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:10:34.437] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:34.440] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:34.441] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:34.444] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:34.522] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:10:41.444] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:41.454] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:41.456] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:41.458] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:10:41.540] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:14:56.313] Server  ERROR    ⨯ TypeError: blogs.map is not a function
-[00:14:57.769] Browser ERROR   uncaughtError: TypeError: blogs.map is not a function
-[00:15:21.728] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:21.731] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:21.776] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:21.778] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:22.356] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:15:25.998] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:22:28.120] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:22:57.640] Server  LOG      ✓ Compiled in 150ms
+[00:23:14.395] Server  LOG      ✓ Compiled in 100ms
+[00:23:38.930] Server  LOG      ✓ Compiled in 95ms
+[00:23:50.874] Server  LOG      ✓ Compiled in 83ms
+[00:24:18.657] Server  LOG      ✓ Compiled in 125ms
+[00:25:02.814] Server  LOG      ✓ Compiled in 109ms
+[00:25:04.461] Server  LOG      ✓ Compiled in 94ms
+[00:25:35.859] Server  LOG      ✓ Compiled in 92ms
+[00:25:42.439] Server  LOG      ✓ Compiled in 91ms
+[00:26:12.189] Server  LOG      ✓ Compiled in 99ms
+[00:27:29.675] Server  LOG      ✓ Compiled in 93ms
+[00:27:46.565] Server  LOG      ✓ Compiled in 93ms
+[00:28:38.034] Server  LOG      ✓ Compiled in 93ms
+[00:28:58.587] Server  LOG      ✓ Compiled in 90ms
+[00:29:23.239] Server  LOG      ✓ Compiled in 99ms
+[00:29:47.924] Server  LOG      ✓ Compiled in 86ms
+[00:30:32.140] Server  LOG      ✓ Compiled in 146ms
+[00:30:56.499] Server  LOG      ✓ Compiled in 98ms
+[00:31:11.374] Server  LOG      ✓ Compiled in 92ms
+[00:31:18.614] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:32:15.651] Server  LOG      ✓ Compiled in 87ms
+[00:32:44.084] Server  LOG      ✓ Compiled in 102ms
+[00:33:36.269] Server  LOG      ✓ Compiled in 85ms
+[00:33:39.837] Server  LOG      ✓ Compiled in 81ms
+[00:33:45.480] Server  LOG      ✓ Compiled in 91ms
+[00:34:07.052] Server  LOG      ✓ Compiled in 86ms
+[00:34:14.129] Server  LOG      ✓ Compiled in 84ms
+[00:34:14.827] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:37:20.250] Server  LOG      ✓ Compiled in 113ms
+[00:37:20.881] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:37:20.881] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:37:27.996] Server  LOG      ✓ Compiled in 87ms
+[00:40:32.834] Server  LOG      ✓ Compiled in 98ms
+[00:40:33.822] Browser ERROR   uncaughtError: ReferenceError: useEffect is not defined
+[00:40:46.977] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:40:46.980] Server  LOG      ✓ Compiled in 133ms
+[00:40:49.459] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -169,7 +166,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/news" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/app/blogs..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -181,7 +178,7 @@ It can also happen if the client has a browser extension installed which messes 
                       <script>
                       <script>
                       <RootLayout>
-                        <html lang="ar" dir="rtl">
+                        <html dir="rtl">
                           <body
                             className="antialiased"
 -                           data-new-gr-c-s-check-loaded="14.1264.0"
@@ -189,14 +186,105 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:15:29.439] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:29.441] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:29.447] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:29.455] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:29.536] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:15:41.137] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
-[00:15:51.639] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:51.642] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:51.643] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7_%D8%AA%D8%AA%D9%81%D9%88%D9%82_%D8%B9%D9%84%D9%89_%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7_%D9%88%D8%AA%D8%AD%D8%B1%D8%B2_%D9%84%D9%82%D8%A8_%D9%83%D8%A3%D8%B3_%D8%AF%D9%8A%D9%81%D9%8A%D8%B3.384.png" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:51.645] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/1763657858717_defb0c25-3b35-45b9-b410-492d8eb8e5a5.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
-[00:15:51.735] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:40:49.459] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:42:45.904] Server  LOG      ✓ Compiled in 94ms
+[00:43:08.353] Browser LOG     <p>pask</p><p>afsdfsdfasdfasd</p><p>fafasfsadfasdf</p>
+[00:44:41.959] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/components/CreateBlog.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:44:42.850] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:44:45.760] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Page`.
+[00:45:11.590] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:45:13.055] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Page`.
+[00:45:29.194] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/app/blogs..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1264.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:45:29.194] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:46:45.935] Server  LOG      ✓ Compiled in 706ms
+[00:46:46.832] Browser ERROR   ./app/components/CreateBlog.jsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react'
+    |          ^^^^^^^^
+  2 | import {
+  3 |   Card,
+  4 |   CardContent,
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./app/components/CreateBlog.jsx
+    ./app/app/(pages)/blogs/create/page.jsx
+[00:46:46.832] Browser ERROR   ./app/app/(pages)/blogs/create/page.jsx:1:1
+Export CreateBlog doesn't exist in target module
+> 1 | import { CreateBlog } from '@/app/components/CreateBlog';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import React from 'react';
+  3 |
+  4 | const Page = () => {
+
+The export CreateBlog was not found in module [project]/app/components/CreateBlog.jsx [app-rsc] (ecmascript).
+Did you mean to import default?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[00:46:55.738] Server  LOG      ✓ Compiled in 610ms
+[00:47:32.513] Server  LOG      ✓ Compiled in 157ms
+[00:47:32.842] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:48:13.806] Browser LOG     Preview: {"category":{"id":1,"name":"كرة القدم","slug":"khbr"},"contentHtml":"<p>Start writing…</p>","title":""}
+[00:48:14.749] Browser LOG     Preview: {"category":{"id":1,"name":"كرة القدم","slug":"khbr"},"contentHtml":"<p>Start writing…</p>","title":""}
+[00:48:15.610] Browser LOG     {"category":{"id":1,"name":"كرة القدم","slug":"khbr"},"contentHtml":"<p>Start writing…</p>","title":""}
+[00:48:22.440] Browser LOG     {"category":{"id":1,"name":"كرة القدم","slug":"khbr"},"contentHtml":"<p>Start writing…</p>","title":""}
+[00:48:53.590] Browser LOG     {"category":{"id":1,"name":"كرة القدم","slug":"khbr"},"contentHtml":"<p>Start writing…</p>","tags":["asdfasd","asdfas","asfasdf"],"title":"العنوان"}
+[00:50:12.887] Server  LOG      ✓ Compiled in 111ms
+[00:50:13.822] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:51:00.820] Server  LOG      ✓ Compiled in 144ms
+[00:51:34.048] Server  LOG      ✓ Compiled in 89ms
+[00:51:58.270] Server  LOG      ✓ Compiled in 179ms
+[00:52:48.055] Server  LOG      ✓ Compiled in 115ms
+[00:52:53.820] Server  LOG      ✓ Compiled in 87ms
+[00:53:22.519] Server  LOG      ✓ Compiled in 101ms
+[00:53:37.808] Server  LOG      ✓ Compiled in 93ms
+[00:54:15.103] Server  LOG      ✓ Compiled in 126ms
+[00:54:16.070] Server  LOG      ✓ Compiled in 99ms
+[00:54:16.932] Server  LOG      ✓ Compiled in 100ms
+[00:54:23.829] Server  LOG      ✓ Compiled in 87ms
+[00:55:01.144] Server  LOG      ✓ Compiled in 91ms
+[00:55:37.004] Server  LOG      ✓ Compiled in 88ms
