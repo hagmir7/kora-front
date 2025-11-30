@@ -1,10 +1,12 @@
-import { CreateBlog } from '@/app/components/CreateBlog';
+
+
+import CreateEditBlog from '@/app/components/CreateEditBlog';
 import React from 'react';
 
 const Page = () => {
     return (
       <div>
-        <CreateBlog />
+        <CreateEditBlog />
       </div>
     )
 }

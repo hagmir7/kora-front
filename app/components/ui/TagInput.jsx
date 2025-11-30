@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import { X } from "lucide-react";
+import React, { useState, useEffect, useRef } from 'react'
+import { X } from 'lucide-react'
 // If you're using shadcn/ui components in your project, swap the native input/button
 // with shadcn imports like:
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 /**
  * Reusable TagInput component (JavaScript + React)
@@ -24,8 +24,8 @@ export default function TagInput({
   onChange,
   placeholder = 'علامات',
   allowDuplicates = false,
-  name ="",
-  id =""
+  name = '',
+  id = '',
 }) {
   const [internalTags, setInternalTags] = useState(defaultValue)
   const [input, setInput] = useState('')
@@ -35,7 +35,6 @@ export default function TagInput({
   useEffect(() => {
     if (value) setInternalTags(value)
   }, [value])
-
 
   const emit = (next) => {
     if (!value) setInternalTags(next) // only manage local state if uncontrolled
@@ -76,7 +75,6 @@ export default function TagInput({
     }
 
     if (e.key === 'Backspace' && input === '' && internalTags.length) {
-
       const last = internalTags[internalTags.length - 1]
       removeTag(internalTags.length - 1)
       setInput(last)
@@ -100,43 +98,40 @@ export default function TagInput({
   }
 
   return (
-    <div>
-      <div
-        className=''
-        onClick={() => inputRef.current && inputRef.current.focus()}
-      >
-        <div className="flex gap-2 flex-wrap">
-          {internalTags.map((tag, idx) => (
-            <span
-              key={tag + '-' + idx}
-              className='inline-flex items-center gap-2 px-2 py-1 rounded-full bg-muted text-sm'
-            >
-              <span className='select-none'>{tag}</span>
-              <button
-                type='button'
-                aria-label={`Remove ${tag}`}
-                onClick={() => removeTag(idx)}
-                className='inline-flex items-center justify-center rounded-full p-1 hover:bg-muted/50'
-              >
-                <X className='h-3 w-3' />
-              </button>
-            </span>
-          ))}
-        </div>
+    <div
+      className=''
+      onClick={() => inputRef.current && inputRef.current.focus()}
+    >
+      <Input
+        ref={inputRef}
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        onKeyDown={handleKeyDown}
+        onPaste={handlePaste}
+        name={name}
+        placeholder={placeholder}
+        id={id}
+        className='flex-1 min-w-[120px] bg-transparent outline-none text-sm'
+      />
 
-        <Input
-          ref={inputRef}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={handleKeyDown}
-          onPaste={handlePaste}
-          name={name}
-          placeholder={placeholder}
-          id={id}
-          className='flex-1 min-w-[120px] bg-transparent outline-none text-sm'
-        />
+      <div className='flex gap-2 flex-wrap mt-2'>
+        {internalTags.map((tag, idx) => (
+          <span
+            key={tag + '-' + idx}
+            className='inline-flex items-center gap-2 px-2 py-1 rounded-full bg-muted text-sm'
+          >
+            <span className='select-none'>{tag}</span>
+            <button
+              type='button'
+              aria-label={`Remove ${tag}`}
+              onClick={() => removeTag(idx)}
+              className='inline-flex items-center justify-center rounded-full p-1 hover:bg-muted/50'
+            >
+              <X className='h-3 w-3' />
+            </button>
+          </span>
+        ))}
       </div>
     </div>
   )
 }
-

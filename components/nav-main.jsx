@@ -1,53 +1,60 @@
-"use client"
+'use client'
 
-import { IconCirclePlusFilled, IconMail } from "@tabler/icons-react";
+import * as React from 'react'
+import { usePathname } from 'next/navigation'
+import { IconCirclePlusFilled, IconMail } from '@tabler/icons-react'
 
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
 import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
-import Link from "next/link";
+} from '@/components/ui/sidebar'
+import Link from 'next/link'
 
-export function NavMain({ items }) {
+export function NavMain({ items = [] }) {
+  const pathname = usePathname() || '/'
 
+  const isActiveUrl = (itemUrl) => {
+    if (!itemUrl) return false
+
+    const clean = (u) => (u === '/' ? '/' : u.replace(/\/$/, ''))
+
+    const path = clean(pathname)
+    const url = clean(itemUrl)
+
+    if (url === '/app') {
+      return path === '/app'
+    }
+
+    return path.startsWith(url)
+  }
 
   return (
     <SidebarGroup>
-      <SidebarGroupContent className='flex flex-col gap-2'>
+      <SidebarGroupContent className='flex flex-col gap-2 mt-4'>
+        {/* Main Menu */}
         <SidebarMenu>
-          <SidebarMenuItem className='flex items-center gap-2'>
-            <SidebarMenuButton
-              tooltip='Quick Create'
-              className='bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground active:bg-primary/90 active:text-primary-foreground min-w-8 duration-200 ease-linear'
-            >
-              <IconCirclePlusFilled />
-              <span>Quick Create</span>
-            </SidebarMenuButton>
-            <Button
-              size='icon'
-              className='size-8 group-data-[collapsible=icon]:opacity-0'
-              variant='outline'
-            >
-              <IconMail />
-              <span className='sr-only'>Inbox</span>
-            </Button>
-          </SidebarMenuItem>
-        </SidebarMenu>
-        <SidebarMenu>
-          {items.map((item) => (
-            <SidebarMenuItem key={item.title} href={item.url}>
-              <Link href={item.url || "no-url"}>
-                <SidebarMenuButton tooltip={item.title}>
-                  {item.icon && <item.icon />}
-                  <span>{item.title}</span>
+          {items.map((item) => {
+            const active = isActiveUrl(item.url)
+
+            return (
+              <SidebarMenuItem key={item.title}>
+                <SidebarMenuButton
+                  asChild
+                  tooltip={item.title}
+                  data-active={active ? 'true' : 'false'}
+                >
+                  <Link href={item.url}>
+                    {item.icon && <item.icon className='!size-5' />}
+                    <span>{item.title}</span>
+                  </Link>
                 </SidebarMenuButton>
-              </Link>
-            </SidebarMenuItem>
-          ))}
+              </SidebarMenuItem>
+            )
+          })}
         </SidebarMenu>
       </SidebarGroupContent>
     </SidebarGroup>

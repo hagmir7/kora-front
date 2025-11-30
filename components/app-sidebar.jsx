@@ -141,9 +141,28 @@ const data = {
   ],
 }
 
-export function AppSidebar({
-  ...props
-}) {
+export function AppSidebar({...props}) {
+
+  const [loading, setLoading] = React.useState(true)
+  const [auth, setAuth] = React.useState(null)
+
+  React.useEffect(() => {
+    async function checkAuth() {
+      try {
+        const res = await fetch('/api/auth/me')
+        const data = await res.json()
+        setAuth(data)
+      } catch (error) {
+        console.error('Auth check failed:', error)
+        setAuth(null)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    checkAuth()
+  }, [])
+  
   return (
     <Sidebar collapsible='offcanvas' {...props}>
       <SidebarHeader>

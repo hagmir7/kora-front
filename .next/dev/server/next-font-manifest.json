@@ -1,8 +1,5 @@
 {
-  "app": {
-    "[project]/app/_not-found/page": [],
-    "[project]/app/app/(pages)/blogs/create/page": []
-  },
+  "app": {},
   "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false

@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Underline from '@tiptap/extension-underline'
@@ -39,6 +39,30 @@ import {
 const MenuBar = ({ editor }) => {
   const [showColorPicker, setShowColorPicker] = useState(false)
   const [showHighlightPicker, setShowHighlightPicker] = useState(false)
+  const colorPickerRef = useRef(null)
+  const highlightPickerRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        colorPickerRef.current &&
+        !colorPickerRef.current.contains(event.target)
+      ) {
+        setShowColorPicker(false)
+      }
+      if (
+        highlightPickerRef.current &&
+        !highlightPickerRef.current.contains(event.target)
+      ) {
+        setShowHighlightPicker(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   if (!editor) return null
 
@@ -77,10 +101,19 @@ const MenuBar = ({ editor }) => {
       .run()
   }
 
+  const handleButtonClick = (callback) => (e) => {
+    e.preventDefault()
+    callback()
+  }
+
   return (
-    <div className='border-b border-gray-300 bg-gray-50 px-2 py-1 flex flex-wrap gap-1 sticky top-0 z-10'>
+    <div
+      className='border-b border-gray-300 bg-gray-50 px-2 py-1 flex flex-wrap gap-1 sticky top-0 z-10'
+      onMouseDown={(e) => e.preventDefault()}
+    >
       <button
-        onClick={() => editor.chain().focus().undo().run()}
+        type='button'
+        onClick={handleButtonClick(() => editor.chain().focus().undo().run())}
         disabled={!editor.can().undo()}
         className='p-2 rounded hover:bg-gray-200 disabled:opacity-30'
         title='Undo'
@@ -88,7 +121,8 @@ const MenuBar = ({ editor }) => {
         <Undo size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().redo().run()}
+        type='button'
+        onClick={handleButtonClick(() => editor.chain().focus().redo().run())}
         disabled={!editor.can().redo()}
         className='p-2 rounded hover:bg-gray-200 disabled:opacity-30'
         title='Redo'
@@ -99,7 +133,10 @@ const MenuBar = ({ editor }) => {
       <div className='w-px h-8 bg-gray-300 mx-1' />
 
       <button
-        onClick={() => editor.chain().focus().toggleBold().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleBold().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('bold') ? 'bg-blue-100' : ''
         }`}
@@ -108,7 +145,10 @@ const MenuBar = ({ editor }) => {
         <Bold size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleItalic().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleItalic().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('italic') ? 'bg-blue-100' : ''
         }`}
@@ -117,7 +157,10 @@ const MenuBar = ({ editor }) => {
         <Italic size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleUnderline().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleUnderline().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('underline') ? 'bg-blue-100' : ''
         }`}
@@ -126,7 +169,10 @@ const MenuBar = ({ editor }) => {
         <Type size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleStrike().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleStrike().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('strike') ? 'bg-blue-100' : ''
         }`}
@@ -135,7 +181,10 @@ const MenuBar = ({ editor }) => {
         <Strikethrough size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleCode().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleCode().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('code') ? 'bg-blue-100' : ''
         }`}
@@ -146,9 +195,14 @@ const MenuBar = ({ editor }) => {
 
       <div className='w-px h-8 bg-gray-300 mx-1' />
 
-      <div className='relative'>
+      <div className='relative' ref={colorPickerRef}>
         <button
-          onClick={() => setShowColorPicker(!showColorPicker)}
+          type='button'
+          onClick={(e) => {
+            e.preventDefault()
+            setShowColorPicker(!showColorPicker)
+            setShowHighlightPicker(false)
+          }}
           className='p-2 rounded hover:bg-gray-200'
           title='Text Color'
         >
@@ -159,7 +213,9 @@ const MenuBar = ({ editor }) => {
             {colors.map((color) => (
               <button
                 key={color}
-                onClick={() => {
+                type='button'
+                onClick={(e) => {
+                  e.preventDefault()
                   editor.chain().focus().setColor(color).run()
                   setShowColorPicker(false)
                 }}
@@ -171,9 +227,14 @@ const MenuBar = ({ editor }) => {
         )}
       </div>
 
-      <div className='relative'>
+      <div className='relative' ref={highlightPickerRef}>
         <button
-          onClick={() => setShowHighlightPicker(!showHighlightPicker)}
+          type='button'
+          onClick={(e) => {
+            e.preventDefault()
+            setShowHighlightPicker(!showHighlightPicker)
+            setShowColorPicker(false)
+          }}
           className={`p-2 rounded hover:bg-gray-200 ${
             editor.isActive('highlight') ? 'bg-blue-100' : ''
           }`}
@@ -186,7 +247,9 @@ const MenuBar = ({ editor }) => {
             {colors.map((color) => (
               <button
                 key={color}
-                onClick={() => {
+                type='button'
+                onClick={(e) => {
+                  e.preventDefault()
                   editor.chain().focus().toggleHighlight({ color }).run()
                   setShowHighlightPicker(false)
                 }}
@@ -201,7 +264,10 @@ const MenuBar = ({ editor }) => {
       <div className='w-px h-8 bg-gray-300 mx-1' />
 
       <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleHeading({ level: 2 }).run()
+        )}
         className={`p-2 px-3 rounded hover:bg-gray-200 font-bold ${
           editor.isActive('heading', { level: 2 }) ? 'bg-blue-100' : ''
         }`}
@@ -210,7 +276,10 @@ const MenuBar = ({ editor }) => {
         H2
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleHeading({ level: 3 }).run()
+        )}
         className={`p-2 px-3 rounded hover:bg-gray-200 font-bold ${
           editor.isActive('heading', { level: 3 }) ? 'bg-blue-100' : ''
         }`}
@@ -222,7 +291,10 @@ const MenuBar = ({ editor }) => {
       <div className='w-px h-8 bg-gray-300 mx-1' />
 
       <button
-        onClick={() => editor.chain().focus().setTextAlign('left').run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().setTextAlign('left').run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive({ textAlign: 'left' }) ? 'bg-blue-100' : ''
         }`}
@@ -231,7 +303,10 @@ const MenuBar = ({ editor }) => {
         <AlignLeft size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().setTextAlign('center').run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().setTextAlign('center').run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive({ textAlign: 'center' }) ? 'bg-blue-100' : ''
         }`}
@@ -240,7 +315,10 @@ const MenuBar = ({ editor }) => {
         <AlignCenter size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().setTextAlign('right').run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().setTextAlign('right').run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive({ textAlign: 'right' }) ? 'bg-blue-100' : ''
         }`}
@@ -249,7 +327,10 @@ const MenuBar = ({ editor }) => {
         <AlignRight size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().setTextAlign('justify').run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().setTextAlign('justify').run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive({ textAlign: 'justify' }) ? 'bg-blue-100' : ''
         }`}
@@ -261,7 +342,10 @@ const MenuBar = ({ editor }) => {
       <div className='w-px h-8 bg-gray-300 mx-1' />
 
       <button
-        onClick={() => editor.chain().focus().toggleBulletList().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleBulletList().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('bulletList') ? 'bg-blue-100' : ''
         }`}
@@ -270,7 +354,10 @@ const MenuBar = ({ editor }) => {
         <List size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleOrderedList().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleOrderedList().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('orderedList') ? 'bg-blue-100' : ''
         }`}
@@ -279,7 +366,10 @@ const MenuBar = ({ editor }) => {
         <ListOrdered size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().toggleBlockquote().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().toggleBlockquote().run()
+        )}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('blockquote') ? 'bg-blue-100' : ''
         }`}
@@ -291,7 +381,8 @@ const MenuBar = ({ editor }) => {
       <div className='w-px h-8 bg-gray-300 mx-1' />
 
       <button
-        onClick={addLink}
+        type='button'
+        onClick={handleButtonClick(addLink)}
         className={`p-2 rounded hover:bg-gray-200 ${
           editor.isActive('link') ? 'bg-blue-100' : ''
         }`}
@@ -300,21 +391,26 @@ const MenuBar = ({ editor }) => {
         <Link2 size={18} />
       </button>
       <button
-        onClick={addImage}
+        type='button'
+        onClick={handleButtonClick(addImage)}
         className='p-2 rounded hover:bg-gray-200'
         title='Add Image'
       >
         <ImagePlus size={18} />
       </button>
       <button
-        onClick={insertTable}
+        type='button'
+        onClick={handleButtonClick(insertTable)}
         className='p-2 rounded hover:bg-gray-200'
         title='Insert Table'
       >
         <Grid3x3 size={18} />
       </button>
       <button
-        onClick={() => editor.chain().focus().setHorizontalRule().run()}
+        type='button'
+        onClick={handleButtonClick(() =>
+          editor.chain().focus().setHorizontalRule().run()
+        )}
         className='p-2 rounded hover:bg-gray-200'
         title='Horizontal Rule'
       >
@@ -356,24 +452,28 @@ export default function RichTextEditor({ initialContent = '', onChange }) {
     },
   })
 
+  // Only set initial content once when editor is first created
+  useEffect(() => {
+    if (editor && initialContent) {
+      editor.commands.setContent(initialContent, false)
+    }
+  }, [editor])
 
+  useEffect(() => {
+    if (!editor) return
 
-    useEffect(() => {
-      if (!editor) return
+    const handleUpdate = () => {
+      const html = editor.getHTML()
+      if (typeof onChange === 'function') onChange(html)
+    }
 
-      const handleUpdate = () => {
-        const html = editor.getHTML()
-        if (typeof onChange === 'function') onChange(html)
-      }
+    editor.on('update', handleUpdate)
+    handleUpdate()
 
-      editor.on('update', handleUpdate)
-      handleUpdate()
-
-      return () => {
-        editor.off('update', handleUpdate)
-      }
-    }, [editor, onChange])
-
+    return () => {
+      editor.off('update', handleUpdate)
+    }
+  }, [editor, onChange])
 
   return (
     <div className='w-full h-screen flex flex-col bg-gray-100 overflow-hidden'>

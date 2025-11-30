@@ -93,7 +93,8 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { CreateBlog } from "@/app/components/CreateBlog";
+import { CreateEditBlog } from "@/app/components/CreateEditBlog";
+import Link from "next/link";
 
 export const schema = z.object({
   id: z.number(),
@@ -202,7 +203,7 @@ const columns = [
 
   {
     id: 'actions',
-    cell: () => (
+    cell: ({ row }) => (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
@@ -215,9 +216,9 @@ const columns = [
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align='end' className='w-32'>
-          <DropdownMenuItem>تعديل</DropdownMenuItem>
-          <DropdownMenuItem>Make a copy</DropdownMenuItem>
-          <DropdownMenuItem>Favorite</DropdownMenuItem>
+          <Link href={`/app/blogs/${row?.original?.slug}`}>
+            <DropdownMenuItem>تعديل</DropdownMenuItem>
+          </Link>
           <DropdownMenuSeparator />
           <DropdownMenuItem variant='destructive'>حذف</DropdownMenuItem>
         </DropdownMenuContent>
@@ -373,9 +374,11 @@ export function BlogTable({
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Button  variant='outline' size='sm'>
-            <IconPlus />
-            <span className='hidden lg:inline'>إضافة قسم</span>
+          <Button variant='outline' size='sm'>
+            <Link href='/app/blogs/create' className="flex gap-2 items-center">
+              <IconPlus />
+              <span className='hidden lg:inline'>إضافة قسم</span>
+            </Link>
           </Button>
         </div>
       </div>
