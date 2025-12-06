@@ -1,5 +1,13 @@
 {
-  "app": {},
+  "app": {
+    "[project]/app/(pages)/auth/login/page": [],
+    "[project]/app/(pages)/news/page": [],
+    "[project]/app/_not-found/page": [],
+    "[project]/app/app/(pages)/blogs/[slug]/page": [],
+    "[project]/app/app/(pages)/blogs/page": [],
+    "[project]/app/app/page": [],
+    "[project]/app/page": []
+  },
   "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false

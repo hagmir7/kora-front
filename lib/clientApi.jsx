@@ -1,18 +1,14 @@
 import axios from 'axios'
 
-// Test token for development
-const TEST_TOKEN =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E'
-
 const getAuthToken = () => {
   // In development, use test token
   if (process.env.NODE_ENV === 'development') {
-    return TEST_TOKEN
+    return localStorage.getItem('access_token') || ''
   }
 
   // In production, use localStorage
   if (typeof window !== 'undefined' && window.localStorage) {
-    return localStorage.getItem('authToken') || ''
+    return localStorage.getItem('access_token') || ''
   }
 
   return ''

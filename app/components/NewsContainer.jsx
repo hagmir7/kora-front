@@ -25,7 +25,7 @@ const NewsContainer = async () => {
       >
         <div className='flex gap-x-1.5 lg:gap-x-2.5 items-center truncate scale-x-[-1]'>
           <h1 className='text-md rtl:text-md font-medium rtl:font-semibold whitespace-nowrap truncate lg:text-lg'>
-            أحدث مقاطع الفيديو
+            أحدث أخبار كرة القدم
           </h1>
         </div>
       </header>

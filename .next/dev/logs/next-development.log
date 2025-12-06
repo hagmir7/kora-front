@@ -1,20 +1,405 @@
-[00:00:00.861] Server  LOG      ✓ Ready in 556ms
-[00:00:10.966] Server  ERROR    ⨯ Detected default export in '[project]/app/api/auth/login/route.js'. Export a named export for each HTTP method instead.
-[00:00:10.972] Server  ERROR    ⨯ No HTTP methods exported in '[project]/app/api/auth/login/route.js'. Export a named export for each HTTP method.
-[00:01:23.912] Server  ERROR    ⨯ Detected default export in '[project]/app/api/auth/login/route.js'. Export a named export for each HTTP method instead.
-[00:01:23.917] Server  ERROR    ⨯ No HTTP methods exported in '[project]/app/api/auth/login/route.js'. Export a named export for each HTTP method.
-[00:01:40.797] Server  LOG        skipping /api/auth/login (conflict)
-[00:01:51.668] Server  ERROR    ⨯ PageNotFoundError: Cannot find module for page: route not found /api/auth/login/route
-[00:01:55.844] Browser ERROR   uncaughtError: Error: ./
-App Router and Pages Router both match path: /api/auth/login
-Next.js does not support having both App Router and Pages Router routes matching the same path. Please remove one of the conflicting routes.
+[00:00:22.327] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:25.780] Server  LOG      ✓ Ready in 15.7s
+[00:03:40.302] Server  LOG      ○ Compiling / ...
+[00:06:34.211] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/auth/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:12:22.938] Server  LOG      ✓ Compiled in 165ms
+[00:14:06.424] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/auth/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:14:17.132] Server  LOG      ✓ Compiled in 150ms
+[00:14:25.617] Server  LOG      ○ Compiling /app ...
+[00:14:38.234] Server  LOG      ○ Compiling /app/blogs ...
+[00:14:52.710] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:14:52.710] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:14:56.412] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:17:01.066] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:17:03.628] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:17:14.480] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:18:31.158] Server  LOG      ✓ Compiled in 154ms
+[00:20:22.710] Server  LOG      ✓ Compiled in 102ms
+[00:21:17.220] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:18.530] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:18.897] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:26.072] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:27.072] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:36.183] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:40.470] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:21:46.146] Server  ERROR   SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)
+[00:22:27.100] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":401}
+[00:22:35.063] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":401}
+[00:23:40.441] Server  LOG      ✓ Compiled in 116ms
+[00:23:47.397] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:23:54.879] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:24:13.085] Server  LOG      ✓ Compiled in 98ms
+[00:24:19.483] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:24:20.141] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:24:20.290] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:24:20.529] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:24:25.345] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/login","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:26:36.582] Server  LOG      ✓ Compiled in 147ms
+[00:26:43.491] Server  LOG      ✓ Compiled in 122ms
+[00:27:35.998] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":true}","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/token","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:27:56.869] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":false}","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/token","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:29:32.077] Server  LOG      ✓ Compiled in 100ms
+[00:29:32.228] Browser ERROR   uncaughtError: ReferenceError: username is not defined
+[00:29:41.612] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:41.622] Server  LOG      ✓ Compiled in 101ms
+[00:29:42.144] Server  ERROR    ⨯ ReferenceError: username is not defined
+[00:29:47.235] Browser ERROR   uncaughtError: ReferenceError: username is not defined
+[00:29:47.376] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:29:48.046] Server  LOG      ✓ Compiled in 104ms
+[00:30:17.217] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","data":"{\"username\":\"admin\",\"password\":\"password\",\"rememberMe\":true}","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"auth/token","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async login (http://localhost:3000/_next/static/chunks/_ba063f37._.js:73:22)\n    at async handleLogin (http://localhost:3000/_next/static/chunks/_ba063f37._.js:166:13)","status":400}
+[00:32:13.046] Server  LOG      ✓ Compiled in 114ms
+[00:32:19.691] Server  LOG      ✓ Compiled in 87ms
+[00:32:47.246] Server  LOG      ✓ Compiled in 102ms
+[00:32:48.230] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:32:50.226] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:32:55.226] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:32:58.236] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:03.129] Server  ERROR    ⨯ ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
 
 
-[00:01:56.997] Browser ERROR   ./
-App Router and Pages Router both match path: /api/auth/login
-Next.js does not support having both App Router and Pages Router routes matching the same path. Please remove one of the conflicting routes.
-[00:01:56.997] Browser ERROR   ./
-App Router and Pages Router both match path: /api/auth/login
-Next.js does not support having both App Router and Pages Router routes matching the same path. Please remove one of the conflicting routes.
-[00:02:52.235] Server  ERROR    ⨯ Detected default export in '[project]/app/api/auth/login/route.js'. Export a named export for each HTTP method instead.
-[00:02:52.236] Server  ERROR    ⨯ No HTTP methods exported in '[project]/app/api/auth/login/route.js'. Export a named export for each HTTP method.
+[00:33:03.250] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:04.586] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:04.830] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:06.985] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:07.447] Browser ERROR   uncaughtError: Error: ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+
+
+[00:33:10.349] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:10.349] Browser ERROR   ./components/login-form.jsx:136:1
+Parsing ecmascript source code failed
+  134 | }
+  135 |
+> 136 | export default LoginForm
+      | ^^^^^^
+  137 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import trace:
+  Server Component:
+    ./components/login-form.jsx
+    ./app/(pages)/auth/login/page.jsx
+[00:33:10.376] Server  LOG      ✓ Compiled in 75ms
+[00:33:20.604] Server  LOG      ✓ Compiled in 80ms
+[00:33:47.106] Server  LOG      ✓ Compiled in 109ms
+[00:34:08.360] Server  LOG      ✓ Compiled in 107ms
+[00:34:40.691] Server  LOG      ✓ Compiled in 77ms
+[00:36:17.396] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:36:17.396] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3479:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:3994:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_9d06cf81._.js:4798:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:36:20.898] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NTkyNDIxLCJpYXQiOjE3NjQ1MDYwMjEsImp0aSI6ImI2ZTRhOGJiMWE2YTRhNWFiNGU2Mjg4ZTgyZWU2YzQ0IiwidXNlcl9pZCI6IjEifQ.CEJ8C7rG8SRv-fyun9LmJ5mG1MMIs5ZbJ0KmcmKVM5E","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2371:42)","status":401}
+[00:37:09.366] Server  LOG      ✓ Compiled in 112ms
+[00:37:16.629] Server  LOG      ✓ Compiled in 106ms
+[00:37:23.430] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NjIxMTE1LCJpYXQiOjE3NjQ1MzQ3MTUsImp0aSI6IjE4YjJkMGUxMWQ4MTQ1ZGQ5MGEwYTQ4YTU1ZTc0OWEyIiwidXNlcl9pZCI6IjEifQ.Mqebqnh_N3Q2e2Yz32yDVETSrQJ9FzIf4xzhal-ft8I","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2369:42)","status":401}
+[00:37:26.699] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NjIxMTE1LCJpYXQiOjE3NjQ1MzQ3MTUsImp0aSI6IjE4YjJkMGUxMWQ4MTQ1ZGQ5MGEwYTQ4YTU1ZTc0OWEyIiwidXNlcl9pZCI6IjEifQ.Mqebqnh_N3Q2e2Yz32yDVETSrQJ9FzIf4xzhal-ft8I","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/blogs/nwn-llg-lfrnsy","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2469:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3273:49)\n    at async Page.useEffect.fetchBlog (http://localhost:3000/_next/static/chunks/_62428a21._.js:2369:42)","status":401}
+[00:38:18.852] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/app/blogs..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:38:18.852] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:38:19.170] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:38:22.218] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[00:38:23.189] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:38:43.977] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:38:43.977] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:39:06.144] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[00:39:06.144] Browser WARN    [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[01:21:56.828] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
+[01:22:05.479] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_1_o8dSgz5.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.483] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_mPGF3I8.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.484] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_1_6B0Obht.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.490] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_1_mtBE1bi.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.494] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_1_9YF6B1Q.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.497] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%83%D9%86_%D8%A7%D9%84%D8%B4%D8%AE%D8%B5_%D8%A7%D9%84%D8%B0%D9%8A_%D9%8A%D8%AC%D8%B9%D9%84%D9%83_%D8%B3%D8%B9%D9%8A%D8%AF%D8%A7_1.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.516] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_1_ZTPzQSz.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.518] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%85%D8%AD%D8%A7%D8%B7_%D8%A8%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89_%D8%A7%D9%84%D9%86%D9%81%D8%B3%D9%8A%D9%8A%D9%86_1.png" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.524] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86_pI0p8XW.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.526] Server  ERROR    ⨯ "upstream image" "http://127.0.0.1:8000/media/blogs/%D9%84%D9%8A%D9%81%D8%B1%D8%A8%D9%88%D9%84_%D9%8A%D8%B3%D8%B9%D9%89_%D9%84%D8%AA%D8%AE%D8%B7%D9%8A_%D8%B9%D9%82%D8%A8%D8%A9_%D8%A2%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86.384.jpg" "resolved to private ip" "[\"127.0.0.1\"]"
+[01:22:05.609] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/api/placeholder/158/90" "received" null
