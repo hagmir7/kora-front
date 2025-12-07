@@ -1,24 +1,26 @@
 // app/api/auth/me/route.js
 import { NextResponse } from "next/server";
 import cookie from "cookie";
+import { createServerApi } from '@/lib/serverApi'
 
 const DJANGO_URL = process.env.DJANGO_URL || "http://localhost:8000";
 
 export async function GET(request) {
+    const api = createServerApi()
     try {
         // Read cookie header (works in all runtimes)
         const cookieHeader = request.headers.get("cookie") || "";
         const cookies = cookie.parse(cookieHeader || "");
         const refresh = cookies.refresh_token;
 
+       
+
         if (!refresh) {
             return NextResponse.json({ authenticated: false, user: null }, { status: 200 });
         }
 
         // Refresh access token using Django
-        const refreshRes = await fetch(`${DJANGO_URL}/api/token/refresh/`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
+        const refreshRes = await api.post(`token/refresh/`, {
             body: JSON.stringify({ refresh }),
         });
 

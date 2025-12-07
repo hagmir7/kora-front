@@ -30,9 +30,9 @@ const NewsContainer = async () => {
         </div>
       </header>
 
-      {/* Video Grid */}
+      {/* News Grid */}
       <div className='w-full mb-8'>
-        <div className='lg:rounded-[22px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-3 gap-y-4 py-2 pt-3'>
+        <div className='lg:rounded-[22px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-3 gap-y-4 py-2 pt-3'>
           {blogs.map((blog, index) => (
             <BlogCard key={index} blog={blog} />
           ))}

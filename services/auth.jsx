@@ -2,35 +2,65 @@
 // import { api } from '@/lib/clientApi'
 import { api } from '@/lib/clientApi'
 import axios from 'axios'
+import Cookies from 'js-cookie' 
+
 
 export const register = async (userData) => {
   return axios.post(`register`, userData)
 }
 
+
+
 export const login = async ({ username, password, rememberMe }) => {
+  if (typeof window === 'undefined') {
+    throw new Error('login() must be called from the browser (client-side).')
+  }
+
   try {
     const response = await api.post(
       'auth/token',
       { username, password, rememberMe },
-      {
-        headers: { 'Content-Type': 'application/json' },
-      }
+      { headers: { 'Content-Type': 'application/json' } }
     )
-    const data = response.data
 
-    if (data.access_token) {
-      localStorage.setItem('access_token', data.access_token)
-      if (rememberMe) {
-        Cookies.set('access_token', data.access_token, { expires: 7 }) // 7 days
+    const data = response.data || {}
+    const token =
+      data.access_token ||
+      data.accessToken ||
+      data.token ||
+      (data.data && (data.data.access_token || data.data.token))
+
+    if (!token) {
+      return data
+    }
+
+    try {
+      localStorage.setItem('access_token', token)
+      console.log('[login] saved token to localStorage')
+    } catch (err) {
+  
+      
+      try {
+        sessionStorage.setItem('access_token', token)
+      } catch (err2) {
+        console.error('[login] sessionStorage also failed:', err2)
       }
     }
 
-    return data
+    if (rememberMe) {
+      Cookies.set('access_token', token, { expires: 7 })
+    }
+
+    return { ...data, _tokenStored: !!token }
   } catch (error) {
-    console.error('Login failed:', error.response?.data || error.message)
+    console.error(
+      'Login failed:',
+      error.response?.data || error.message || error
+    )
     throw error
   }
 }
+
 
 export const forgotPassword = async (email) => {
   return axios.post(`forgot-password`, { email })

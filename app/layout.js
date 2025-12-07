@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html dir="rtl">
       <body
-        className={`antialiased`}
+        className={`antialiased bg-gray-50 min-h-screen font-sans`}
       >
         <Header />
         {children}

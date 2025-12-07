@@ -1,11 +1,6 @@
 {
-  "/(pages)/auth/login/page": "app/(pages)/auth/login/page.js",
+  "/(pages)/compititions/page": "app/(pages)/compititions/page.js",
   "/(pages)/news/page": "app/(pages)/news/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/auth/login/route": "app/api/auth/login/route.js",
-  "/api/auth/me/route": "app/api/auth/me/route.js",
-  "/app/(pages)/blogs/[slug]/page": "app/app/(pages)/blogs/[slug]/page.js",
-  "/app/(pages)/blogs/page": "app/app/(pages)/blogs/page.js",
-  "/app/page": "app/app/page.js",
-  "/page": "app/page.js"
+  "/news/[slug]/page": "app/news/[slug]/page.js"
 }

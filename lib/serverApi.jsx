@@ -13,7 +13,7 @@ const DEFAULT_BASE =
   process.env.NEXT_PUBLIC_API_URL ||
   (process.env.NODE_ENV === 'development'
     ? 'http://127.0.0.1:8000/api/'
-    : 'http://192.168.1.113/api/')
+    : 'https://fifa.facepy.com/api/')
 
 export function createServerApi(req) {
   const instance = axios.create({

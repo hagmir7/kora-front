@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Menu, X, Search, Home, Newspaper, Crown } from 'lucide-react'
+import { Menu, X, Search, Home, Newspaper, Crown, CircleUserRound } from 'lucide-react'
 import { FaFootballBall } from 'react-icons/fa'
 import Link from 'next/link'
 import MobileMenu from './MobileMenu'
@@ -122,9 +122,9 @@ const Header = () => {
 
               {/* Language Switcher */}
               <div className='relative hidden w-6 h-6 md:block text-[#A0A0A0] font-bold hover:text-[#5C2D91]'>
-                <button className='w-6 h-6'>
-                  <span className='w-6 h-6'>EN</span>
-                </button>
+                <Link href={'/profile'}>
+                  <CircleUserRound className='text-[#5C2D91]' />
+                </Link>
               </div>
 
               {/* Mobile Search */}

@@ -3,31 +3,41 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '8000',
+        protocol: "https",
+        hostname: "prod-media.beinsports.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "jdwel.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "assets-us-01.kc-usercontent.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.beinsports.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "fifa.facepy.com",
+        pathname: "/**",
       },
 
+      // Allow localhost images (needed for dev)
       {
-        protocol: 'http',
-        hostname: '127.0.0.1',
-        port: '8000',
+        protocol: "http",
+        hostname: "localhost",
+        pathname: "/**",
       },
       {
-        protocol: 'https',
-        hostname: 'prod-media.beinsports.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'jdwel.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'assets-us-01.kc-usercontent.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.beinsports.com',
+        protocol: "http",
+        hostname: "127.0.0.1",
+        pathname: "/**",
       },
     ],
   },

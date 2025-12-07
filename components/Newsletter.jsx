@@ -20,10 +20,10 @@ const Newsletter = () => {
           className='w-full px-4 py-2 rounded-lg bg-gray-50 border border-gray-200 focus:border-purple-700 focus:outline-none'
         />
         <button
-          className='w-full mt-4 py-2 bg-gray-200 text-gray-400 rounded-md font-medium'
+          className='w-full mt-4 py-2 bg-gray-200 text-gray-400 rounded-md font-medium text-center'
           disabled
         >
-          إشترك
+          <span>إشترك</span>
         </button>
       </div>
     </div>

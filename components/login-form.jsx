@@ -19,7 +19,10 @@ const LoginForm = () => {
     setIsLoading(true)
 
     try {
-      await login({ username, password, rememberMe })
+      const response = await login({ username, password, rememberMe })
+      localStorage.setItem('access_token', response.access)
+      // console.log(response);
+      
       router.push('/app')
     } catch (err) {
       setError('بيانات الدخول غير صحيحة. يرجى المحاولة مرة أخرى.')
@@ -54,7 +57,7 @@ const LoginForm = () => {
             type='text'
             id='username'
             className='w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#5c2d91] focus:border-transparent transition-all'
-            placeholder='example@domain.com'
+            placeholder='أدخل البريد الإلكتروني'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             disabled={isLoading}

@@ -8,8 +8,8 @@ import { usePathname } from 'next/navigation'
 import { api } from '@/lib/clientApi'
 
 const Page = () => {
-  const pathname = usePathname() // e.g., /blogs/my-post-slug
-  const slug = pathname.split('/').pop() // extract last segment
+  const pathname = usePathname()
+  const slug = pathname.split('/').pop()
 
   const [blogData, setBlogData] = useState(null)
   const [loading, setLoading] = useState(true)

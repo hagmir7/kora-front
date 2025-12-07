@@ -3,6 +3,7 @@ import NewsContainer from '@/app/components/NewsContainer'
 import NewsCardGroup from '@/app/components/NewsContainer'
 import VideoCard from '@/app/components/VideoCard'
 import Newsletter from '@/components/Newsletter'
+import PopularNews from '@/components/popular-news'
 import { ChevronDown } from 'lucide-react'
 
 export default function Home() {
@@ -42,30 +43,8 @@ export default function Home() {
         </section>
 
         <aside className='hidden lg:flex flex-col lg:w-1/3 bg-gray-50'>
-          <div className='bg-white shadow-sm mb-4 rounded-[22px]'>
-            <header
-              style={{
-                backgroundImage:
-                  'url(https://prod-media.beinsports.com/image/hero_editorial_background.png)',
-              }}
-              className='bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-t-[22px] px-4 py-4'
-            >
-              <h2 className='text-lg font-semibold'>أحدث مقاطع الفيديو</h2>
-            </header>
-            <div className='px-4 pt-2'>
-              {videos.map((video, idx) => (
-                <VideoCard key={idx} {...video} />
-              ))}
-              <div className='pt-2 pb-4'>
-                <button className='flex items-center text-purple-700 font-medium'>
-                  <span>أظهر المزيد</span>
-                  <ChevronDown className='mr-1 w-4 h-4' />
-                </button>
-              </div>
-            </div>
-          </div>
+          <PopularNews />
 
-          {/* Newsletter */}
           <Newsletter />
 
           {/* Follow Us */}

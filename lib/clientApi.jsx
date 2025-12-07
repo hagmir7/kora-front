@@ -19,7 +19,7 @@ let baseURL
 if (process.env.NODE_ENV === 'development') {
   baseURL = 'http://localhost:8000/api/'
 } else {
-  baseURL = 'http://192.168.1.113/api/'
+  baseURL = 'https://fifa.facepy.com/api/'
 }
 
 export const api = axios.create({
