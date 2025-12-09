@@ -1,20 +1,7 @@
-[00:00:13.472] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:17.347] Server  LOG      ✓ Ready in 13.8s
-[00:00:20.403] Server  LOG      ○ Compiling /compititions ...
-[00:04:12.461] Server  LOG      ✓ Compiled in 161ms
-[00:04:18.020] Browser ERROR   Error fetching competitions: {}
-[00:04:18.020] Browser ERROR   Error fetching types: {}
-[00:04:18.020] Browser ERROR   Error fetching types: {}
-[00:04:18.020] Browser ERROR   Error fetching competitions: {}
-[00:04:21.814] Browser ERROR   Error fetching competitions: {}
-[00:04:22.257] Browser ERROR   Error fetching competitions: {}
-[00:06:16.731] Server  LOG      ✓ Compiled in 352ms
-[00:06:39.766] Server  LOG      ✓ Compiled in 120ms
-[00:06:45.908] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
-[00:06:45.908] Browser ERROR   Error fetching competitions: {}
-[00:08:07.494] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:08:07.518] Server  LOG      ✓ Compiled in 134ms
-[00:08:11.635] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:20.813] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:24.372] Server  LOG      ✓ Ready in 15.3s
+[00:00:27.425] Server  LOG      ○ Compiling /competitions ...
+[00:00:53.038] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -32,7 +19,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/compititions" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/competitions" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -52,296 +39,432 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:08:11.635] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MjAxMTM5LCJpYXQiOjE3NjUxMTQ3MzksImp0aSI6ImNkYWI1YzliOTQ2ZjQ3Y2E5ZDkwZDQ2NmE2NGYxNTk5IiwidXNlcl9pZCI6IjEifQ.7EFuPQUYlEPPFIRUx9MpMLlQLvLdbUQsZ8TwFzsBpsg","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:307:37)","status":404}
-[00:08:51.303] Server  LOG      ✓ Compiled in 134ms
-[00:08:51.500] Browser ERROR   React instrumentation encountered an error: %o {}
-[00:10:54.346] Server  LOG      ✓ Compiled in 112ms
-[00:10:55.496] Browser ERROR   React instrumentation encountered an error: %o {}
-[00:10:55.496] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MjAxMTM5LCJpYXQiOjE3NjUxMTQ3MzksImp0aSI6ImNkYWI1YzliOTQ2ZjQ3Y2E5ZDkwZDQ2NmE2NGYxNTk5IiwidXNlcl9pZCI6IjEifQ.7EFuPQUYlEPPFIRUx9MpMLlQLvLdbUQsZ8TwFzsBpsg","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js?id=%255Bproject%255D%252Fapp%252Fcomponents%252FCompetitionsList.jsx+%255Bapp-client%255D+%2528ecmascript%2529:37:37)","status":404}
-[00:11:03.126] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MjAxMTM5LCJpYXQiOjE3NjUxMTQ3MzksImp0aSI6ImNkYWI1YzliOTQ2ZjQ3Y2E5ZDkwZDQ2NmE2NGYxNTk5IiwidXNlcl9pZCI6IjEifQ.7EFuPQUYlEPPFIRUx9MpMLlQLvLdbUQsZ8TwFzsBpsg","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:307:37)","status":404}
-[00:11:33.959] Server  LOG      ✓ Compiled in 149ms
-[00:11:46.748] Server  LOG      ✓ Compiled in 123ms
-[00:11:52.629] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MjAxMTM5LCJpYXQiOjE3NjUxMTQ3MzksImp0aSI6ImNkYWI1YzliOTQ2ZjQ3Y2E5ZDkwZDQ2NmE2NGYxNTk5IiwidXNlcl9pZCI6IjEifQ.7EFuPQUYlEPPFIRUx9MpMLlQLvLdbUQsZ8TwFzsBpsg","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:307:37)","status":404}
-[00:11:52.634] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/122.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.637] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.638] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/20.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.639] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.640] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.641] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/21.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.657] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/saudi-rsl.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.658] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/11.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.659] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/12.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.662] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/50.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.666] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/51.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.668] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/arab-club-championship-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.676] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.677] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/french-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.678] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:11:52.680] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/dfl-supercup.png" "resolved to private ip" "[\"::1\"]"
-[00:11:53.993] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/57.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.039] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/fa-community-shield.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.123] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/14.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.293] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.377] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/5.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.607] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/joan-gamper.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.653] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uefa-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.845] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/67.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.891] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/74.png" "resolved to private ip" "[\"::1\"]"
-[00:11:54.996] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/118.png" "resolved to private ip" "[\"::1\"]"
-[00:11:55.161] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/75.png" "resolved to private ip" "[\"::1\"]"
-[00:11:55.243] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/europa-conference-league.png" "resolved to private ip" "[\"::1\"]"
-[00:11:55.449] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uefa-nations-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:11:55.754] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/28.png" "resolved to private ip" "[\"::1\"]"
-[00:12:02.731] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MjAxMTM5LCJpYXQiOjE3NjUxMTQ3MzksImp0aSI6ImNkYWI1YzliOTQ2ZjQ3Y2E5ZDkwZDQ2NmE2NGYxNTk5IiwidXNlcl9pZCI6IjEifQ.7EFuPQUYlEPPFIRUx9MpMLlQLvLdbUQsZ8TwFzsBpsg","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:307:37)","status":404}
-[00:12:19.913] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/confederations-cup-v1.png" "resolved to private ip" "[\"::1\"]"
-[00:12:20.042] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/18.png" "resolved to private ip" "[\"::1\"]"
-[00:12:20.251] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/finalissima.png" "resolved to private ip" "[\"::1\"]"
-[00:12:20.745] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/olympics.png" "resolved to private ip" "[\"::1\"]"
-[00:12:20.826] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/asian-cup-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.040] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/138.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.405] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/148.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.433] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/84.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.538] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/66.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.682] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-champions-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.742] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-confederations-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:21.812] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.040] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.081] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/92.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.295] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/egypt-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.377] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/1.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.560] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/egyptian-association.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.626] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.761] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-throne-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:22.841] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/53.png" "resolved to private ip" "[\"::1\"]"
-[00:12:23.010] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/143.png" "resolved to private ip" "[\"::1\"]"
-[00:12:23.168] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/112.png" "resolved to private ip" "[\"::1\"]"
-[00:12:23.821] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-ligue-1-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:23.855] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:23.902] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:23.937] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/saudi-crown-prince.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.004] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/fdl.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.108] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/saudi-reserve-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.144] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/fifa-symbol.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.207] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/european-qualifiers-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.379] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/european-qualifiers-v2_B7XSsou.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.407] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/19.png" "resolved to private ip" "[\"::1\"]"
-[00:12:24.486] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-v2_9AtjFl2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:30.815] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/71.png" "resolved to private ip" "[\"::1\"]"
-[00:12:30.851] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-v2_2LU6vCj.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.107] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/afc.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.148] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/lusail-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.156] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/concacaf-gold-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.267] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/78.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.367] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/olympics_kKOQsBy.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.399] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/123.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.426] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/copa-america-women.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.466] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/79.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.522] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/euro-u21.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.585] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/41.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.655] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/afc_BkOihck.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.656] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/69.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.687] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/69_gwiih1I.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.703] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/afc_PB0c0gO.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.739] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/46.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.787] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/77.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.833] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-logo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.918] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/african-nations-championship.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.919] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/arab-club-championship-v2_h7UGPbY.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.965] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/141.png" "resolved to private ip" "[\"::1\"]"
-[00:12:31.984] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/afc_XHiRCK2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.005] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uafa.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.036] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/arab-club-championship-v2_5FEeRJn.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.052] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/eredivisie.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.106] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/dutch-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.152] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/49.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.234] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/portuguese-super.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.252] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/taca-da-liga.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.273] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/championship-efl-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.274] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.304] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.340] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.383] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/38.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.451] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/104.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.514] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/belgian-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.516] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/coppa-italia-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.547] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/113.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.585] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/coupe-de-la-ligue.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.635] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/taca-de-portugal.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.637] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/96.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.685] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/24.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.756] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/belgian-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.757] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uae-gulf-league-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.799] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uae-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.869] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/54.png" "resolved to private ip" "[\"::1\"]"
-[00:12:32.917] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uae-presidents-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.025] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/130.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.027] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/103.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.089] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/qsl-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.091] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/108.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.121] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/qfa.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.138] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/13.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.184] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/15.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.218] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/86.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.318] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/85.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.334] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/jordanian-pro-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.338] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/116.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.356] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/jordan-shield-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.418] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/117.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.456] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.499] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/124.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.556] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/128.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.634] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/95.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.636] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/119.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.653] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/kuwait-crown-prince.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.661] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/kuwait-emir-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.703] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/kuwait-federation-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.739] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/119_sgjsd5U.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.771] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/oman-professional-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.804] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/sultan-qaboos-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.853] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/oman-professional-league_RDNXmIk.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.923] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/oman-professional-league_wm45dnC.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.924] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/nasser-bin-hamad-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.927] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bahrain-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:33.963] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bahrain-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:34.002] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/114.png" "resolved to private ip" "[\"::1\"]"
-[00:12:34.045] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/16.png" "resolved to private ip" "[\"::1\"]"
-[00:12:34.123] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/147.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.318] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/122.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.324] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.325] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/50.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.327] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/51.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.328] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/arab-club-championship-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.334] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/french-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.339] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/fa-community-shield.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.340] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/finalissima.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.345] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/66.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.347] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/caf-champions-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.349] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-throne-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.354] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/71.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.359] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/41.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.359] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/afc_BkOihck.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.361] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/69.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.362] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/69_gwiih1I.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.815] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/122.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.816] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.818] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.819] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/20.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.820] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.821] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/21.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.830] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/saudi-rsl.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.832] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/11.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.838] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/12.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.843] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/50.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.844] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/51.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.845] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/arab-club-championship-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.849] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.851] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:40.852] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/dfl-supercup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.175] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/122.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.177] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.178] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.179] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/20.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.181] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.183] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/21.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.193] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/saudi-rsl.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.194] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/11.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.200] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/12.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.201] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/50.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.206] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/51.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.207] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/arab-club-championship-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.213] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.215] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/french-super-cup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.217] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:42.218] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/dfl-supercup.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.103] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/67.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.105] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/92.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.106] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.107] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/143.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.108] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-ligue-1-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.109] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/eredivisie.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.125] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/49.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.126] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/taca-da-liga.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.127] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.128] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.129] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.132] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.138] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.140] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.141] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.142] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.321] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.322] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.323] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.324] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.326] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.327] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/67.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.336] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/92.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.340] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.341] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/143.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.345] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-ligue-1-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.346] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/eredivisie.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.350] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/49.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.351] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/taca-da-liga.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.355] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.358] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.358] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.527] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.528] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.530] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.532] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.533] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.536] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/67.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.549] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/92.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.550] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.553] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/143.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.556] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-ligue-1-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.559] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/eredivisie.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.561] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/49.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.572] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/taca-da-liga.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.574] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.576] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:43.578] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.487] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.488] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.489] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.490] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/47.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.491] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/bundesliga-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.492] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/67.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.503] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/92.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.504] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/moroccan-league-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.506] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/143.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.507] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/tunisian-ligue-1-v2.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.508] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/eredivisie.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.509] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/49.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.517] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/taca-da-liga.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.519] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.520] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.521] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.732] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/38.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.733] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premiership.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.734] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/82.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.735] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/uae-gulf-league-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.736] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/persian-pro-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.737] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-b.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.749] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/44.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.750] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/83.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.754] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/6.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.755] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/8.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.758] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.764] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/la-liga-2023.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.768] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.773] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.774] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:46.776] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/serie-a-v3.png" "resolved to private ip" "[\"::1\"]"
-[00:12:47.634] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:47.636] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:47.637] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:47.638] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:47.639] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/83.png" "resolved to private ip" "[\"::1\"]"
-[00:12:47.640] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/8.png" "resolved to private ip" "[\"::1\"]"
-[00:12:48.006] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/premier-league.png" "resolved to private ip" "[\"::1\"]"
-[00:12:48.007] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/efl-cup-v2_UZULHuo.png" "resolved to private ip" "[\"::1\"]"
-[00:12:48.008] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/144.png" "resolved to private ip" "[\"::1\"]"
-[00:12:48.009] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/145.png" "resolved to private ip" "[\"::1\"]"
-[00:12:48.011] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/83.png" "resolved to private ip" "[\"::1\"]"
-[00:12:48.013] Server  ERROR    ⨯ "upstream image" "http://localhost:8000/media/competitions/8.png" "resolved to private ip" "[\"::1\"]"
+[00:00:54.191] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:00:54.368] Browser WARN    Image with src "http://localhost:8000/media/competitions/122.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.368] Browser WARN    Image with src "http://localhost:8000/media/competitions/premier-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.368] Browser WARN    Image with src "http://localhost:8000/media/competitions/la-liga-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.368] Browser WARN    Image with src "http://localhost:8000/media/competitions/20.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/serie-a-v3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/21.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/saudi-rsl.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/11.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/12.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/50.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/51.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/arab-club-championship-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/47.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/french-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/bundesliga-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/dfl-supercup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/57.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/fa-community-shield.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/14.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/efl-cup-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/joan-gamper.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/67.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/74.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/118.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/75.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/europa-conference-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-nations-league-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/28.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/confederations-cup-v1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/18.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:54.369] Browser WARN    Image with src "http://localhost:8000/media/competitions/finalissima.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:32.975] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/competiti..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased bg-gray-50 min-h-screen font-sans"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:01:36.177] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/competiti..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased bg-gray-50 min-h-screen font-sans"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:01:53.020] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/competitions" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased bg-gray-50 min-h-screen font-sans"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:01:53.020] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:01:53.204] Browser WARN    Image with src "http://localhost:8000/media/competitions/122.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/premier-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/la-liga-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/20.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/serie-a-v3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/21.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/saudi-rsl.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/11.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/12.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/50.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/51.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/arab-club-championship-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/47.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/french-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/bundesliga-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/dfl-supercup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/57.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/fa-community-shield.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/14.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/efl-cup-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/joan-gamper.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/67.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/74.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/118.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/75.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/europa-conference-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-nations-league-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/28.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/confederations-cup-v1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/18.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:53.205] Browser WARN    Image with src "http://localhost:8000/media/competitions/finalissima.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:02:18.280] Server  ERROR    ⨯ Error: The default export is not a React Component in "/competitions/[slug]/page"
+[00:02:18.673] Server  ERROR    ⨯ Error: The default export is not a React Component in "/competitions/[slug]/page"
+[00:02:21.699] Server  LOG      ○ Compiling /_error ...
+[00:02:23.113] Server  LOG      ✓ Compiled in 0ms
+[00:02:29.174] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/competiti..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased bg-gray-50 min-h-screen font-sans"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:04:11.204] Server  LOG      ✓ Compiled in 154ms
+[00:04:19.758] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:04:19.758] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/122.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/premier-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/la-liga-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/20.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/serie-a-v3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/21.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/saudi-rsl.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/11.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/12.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/50.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/51.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/arab-club-championship-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/47.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/french-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/bundesliga-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/dfl-supercup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/57.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/fa-community-shield.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/14.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/efl-cup-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/joan-gamper.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/67.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/74.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/118.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/75.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/europa-conference-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-nations-league-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/28.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/confederations-cup-v1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/18.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:19.940] Browser WARN    Image with src "http://localhost:8000/media/competitions/finalissima.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.701] Browser WARN    Image with src "http://localhost:8000/media/competitions/olympics.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.701] Browser WARN    Image with src "http://localhost:8000/media/competitions/asian-cup-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.701] Browser WARN    Image with src "http://localhost:8000/media/competitions/138.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.842] Browser WARN    Image with src "http://localhost:8000/media/competitions/148.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.843] Browser WARN    Image with src "http://localhost:8000/media/competitions/84.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.843] Browser WARN    Image with src "http://localhost:8000/media/competitions/66.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.960] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-champions-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.960] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:21.960] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-confederations-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:22.265] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:22.265] Browser WARN    Image with src "http://localhost:8000/media/competitions/92.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:04:22.265] Browser WARN    Image with src "http://localhost:8000/media/competitions/egypt-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:07:24.801] Server  WARN     ⚠ The requested resource "/imgs/bg-animation.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+[00:07:24.808] Browser LOG     {"data":{"added_time":null,"away_gender":"M","away_pen":null,"awayteam_id":"357","awayteam_score":"1","events":[{"extra_minute":null,"minute":"6","name":"L. Karl","name_ar":"لينارت كارل","player_id":"229113","reason":null,"related_id":null,"related_name":null,"related_name_ar":null,"team_id":"63","type":"var","var_ar":"VAR"},{"extra_minute":null,"minute":"65","name":"S. Gnabry","name_ar":"سيرجي غنابري","player_id":"3126","reason":"Right foot shot","related_id":"34305","related_name":"M. Olise","related_name_ar":"مايكل أوليز","team_id":"63","type":"goal","var_ar":null},{"extra_minute":null,"minute":"69","name":"L. Karl","name_ar":"لينارت كارل","player_id":"229113","reason":"Right foot shot","related_id":"3050","related_name":"K. Laimer","related_name_ar":"كونراد لايمر","team_id":"63","type":"goal","var_ar":null},{"extra_minute":null,"minute":"54","name":"J. Kimmich","name_ar":"يوشوا كيميتش","player_id":"3113","reason":"Right foot shot","related_id":"209020","related_name":"J. Simões","related_name_ar":"جواو سيمويش","team_id":"357","type":"own-goal","var_ar":null},{"extra_minute":null,"minute":"66","name":"R. Mangas","name_ar":"ريكاردو مانغاس","player_id":"44080","reason":null,"related_id":"115159","related_name":"A. Santos","related_name_ar":"أليسون سانتوس","team_id":"357","type":"substitution","var_ar":null}],"has_pen":"0","home_gender":"M","home_pen":null,"hometeam_id":"63","hometeam_score":"2","match_id":"215485","match_status":"LIVE","minute":"65","note_ar":null,"round":"6","stagename":"League Stage","stagename_ar":"مرحلة الدوري","start_time":"2025-12-09 17:45:00","tv_stations":[{"commentators":"محمد بركات","link":null,"name":"beIN SPORTS 1","theme_color":"#5C2D91"}],"venue_name":"Allianz Arena","venue_name_ar":"أليانز أرينا","view_status":"live"},"information":[]}
+[00:07:24.808] Browser LOG     {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:07:24.808] Browser LOG     [2;38;2;124;124;124m%s[0m {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:07:26.662] Browser LOG     {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:07:26.662] Browser LOG     [2;38;2;124;124;124m%s[0m {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:07:26.841] Browser LOG     {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:07:26.841] Browser LOG     [2;38;2;124;124;124m%s[0m {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:07:37.136] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:07:37.136] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:08:38.054] Server  LOG      ✓ Compiled in 908ms
+[00:08:40.408] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:08:40.408] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:12:59.423] Server  ERROR    ⨯ ReferenceError: createServerApi is not defined
+[00:13:00.560] Browser ERROR   uncaughtError: ReferenceError: createServerApi is not defined
+[00:15:08.002] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:08.649] Server  ERROR    ⨯ ReferenceError: createServerApi is not defined
+[00:15:11.988] Browser ERROR   uncaughtError: ReferenceError: createServerApi is not defined
+[00:15:20.936] Server  LOG      ✓ Compiled in 144ms
+[00:15:24.330] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/competiti..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html dir="rtl">
+                          <body
+                            className="antialiased bg-gray-50 min-h-screen font-sans"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:15:24.330] Browser WARN    Image with src "http://127.0.0.1:8000/media/competitions/la-liga-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.185] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:17:20.185] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/122.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/premier-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/la-liga-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/20.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/serie-a-v3.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/21.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/saudi-rsl.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.327] Browser WARN    Image with src "http://localhost:8000/media/competitions/11.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/12.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/50.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/51.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/arab-club-championship-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/47.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/french-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/bundesliga-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/dfl-supercup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/57.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/fa-community-shield.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/14.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/efl-cup-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/5.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/joan-gamper.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/67.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/74.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/118.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/75.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/europa-conference-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/uefa-nations-league-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/28.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/confederations-cup-v1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/18.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.328] Browser WARN    Image with src "http://localhost:8000/media/competitions/finalissima.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.829] Browser WARN    Image with src "http://localhost:8000/media/competitions/olympics.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.829] Browser WARN    Image with src "http://localhost:8000/media/competitions/asian-cup-2023.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:20.829] Browser WARN    Image with src "http://localhost:8000/media/competitions/138.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:17:23.081] Browser WARN    Image with src "http://127.0.0.1:8000/media/competitions/premier-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:18:44.203] Server  LOG      ✓ Compiled in 294ms
+[00:19:13.426] Server  LOG      ✓ Compiled in 133ms
+[00:22:26.731] Server  LOG      ✓ Compiled in 120ms
+[00:26:39.777] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:26:39.777] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:26:40.751] Browser WARN    Image with src "http://localhost:8000/media/competitions/148.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:40.751] Browser WARN    Image with src "http://localhost:8000/media/competitions/84.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:40.751] Browser WARN    Image with src "http://localhost:8000/media/competitions/66.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:40.947] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-champions-league.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:40.947] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-confederations-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:40.947] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:41.931] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:41.931] Browser WARN    Image with src "http://localhost:8000/media/competitions/92.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:41.931] Browser WARN    Image with src "http://localhost:8000/media/competitions/egypt-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:41.931] Browser WARN    Image with src "http://localhost:8000/media/competitions/1.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:41.931] Browser WARN    Image with src "http://localhost:8000/media/competitions/moroccan-league-v2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:41.931] Browser WARN    Image with src "http://localhost:8000/media/competitions/egyptian-association.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:42.139] Browser WARN    Image with src "http://localhost:8000/media/competitions/moroccan-throne-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:42.139] Browser WARN    Image with src "http://localhost:8000/media/competitions/53.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:42.139] Browser WARN    Image with src "http://localhost:8000/media/competitions/143.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:46.923] Browser WARN    Image with src "http://127.0.0.1:8000/media/competitions/122.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:26:52.547] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:26:52.547] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:27:00.672] Browser WARN    Image with src "http://localhost:8000/media/competitions/112.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:00.672] Browser WARN    Image with src "http://localhost:8000/media/competitions/tunisian-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:01.704] Browser WARN    Image with src "http://localhost:8000/media/competitions/tunisian-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:01.704] Browser WARN    Image with src "http://localhost:8000/media/competitions/saudi-crown-prince.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/fifa-symbol.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/european-qualifiers-v2_B7XSsou.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/19.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/caf-v2_9AtjFl2.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/71.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/78.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/arab-club-championship-v2_h7UGPbY.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/141.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/arab-club-championship-v2_5FEeRJn.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/124.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/128.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/kuwait-crown-prince.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/sultan-qaboos-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/oman-professional-league_RDNXmIk.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/73.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:03.181] Browser WARN    Image with src "http://localhost:8000/media/competitions/70.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:08.394] Browser WARN    Image with src "http://127.0.0.1:8000/media/competitions/57.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:52.366] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:27:52.366] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:27:52.487] Browser WARN    Image with src "http://localhost:8000/media/competitions/lusail-super-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:52.487] Browser WARN    Image with src "http://localhost:8000/media/competitions/concacaf-gold-cup.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:27:54.287] Browser WARN    Image with src "http://127.0.0.1:8000/media/competitions/50.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:29:07.125] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:29:07.125] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:29:35.797] Browser LOG     {"data":{"added_time":"4","away_gender":"M","away_pen":null,"awayteam_id":"357","awayteam_score":"1","events":[{"extra_minute":null,"minute":"6","name":"L. Karl","name_ar":"لينارت كارل","player_id":"229113","reason":null,"related_id":null,"related_name":null,"related_name_ar":null,"team_id":"63","type":"var","var_ar":"VAR"},{"extra_minute":null,"minute":"65","name":"S. Gnabry","name_ar":"سيرجي غنابري","player_id":"3126","reason":"Right foot shot","related_id":"34305","related_name":"M. Olise","related_name_ar":"مايكل أوليز","team_id":"63","type":"goal","var_ar":null},{"extra_minute":null,"minute":"69","name":"L. Karl","name_ar":"لينارت كارل","player_id":"229113","reason":"Right foot shot","related_id":"3050","related_name":"K. Laimer","related_name_ar":"كونراد لايمر","team_id":"63","type":"goal","var_ar":null},{"extra_minute":null,"minute":"71","name":"J. Kimmich","name_ar":"يوشوا كيميتش","player_id":"3113","reason":"Argument","related_id":null,"related_name":null,"related_name_ar":null,"team_id":"63","type":"yellowcard","var_ar":null},{"extra_minute":null,"minute":"77","name":"R. Guerreiro","name_ar":"رافاييل غيريرو","player_id":"2955","reason":null,"related_id":"229113","related_name":"L. Karl","related_name_ar":"لينارت كارل","team_id":"63","type":"substitution","var_ar":null},{"extra_minute":null,"minute":"77","name":"J. Tah","name_ar":"جوناثان تاه","player_id":"3366","reason":"Right foot shot","related_id":"3126","related_name":"S. Gnabry","related_name_ar":"سيرجي غنابري","team_id":"63","type":"goal","var_ar":null},{"extra_minute":null,"minute":"88","name":"A. Davies","name_ar":"ألفونسو ديفيز","player_id":"20482","reason":null,"related_id":"3126","related_name":"S. Gnabry","related_name_ar":"سيرجي غنابري","team_id":"63","type":"substitution","var_ar":null},{"extra_minute":null,"minute":"88","name":"L. Goretzka","name_ar":"ليون غوريتزكا","player_id":"3118","reason":null,"related_id":"150062","related_name":"A. Pavlović","related_name_ar":"أليكساندر بافلوفيتش","team_id":"63","type":"substitution","var_ar":null},{"extra_minute":null,"minute":"88","name":"H. Ito","name_ar":"هيروكي إيتو","player_id":"30624","reason":null,"related_id":"96787","related_name":"J. Stanisic","related_name_ar":"يوسيب ستانيشيتش","team_id":"63","type":"substitution","var_ar":null},{"extra_minute":"2","minute":"90","name":null,"name_ar":null,"player_id":null,"reason":null,"related_id":null,"related_name":null,"related_name_ar":null,"team_id":"63","type":"substitution","var_ar":null},{"extra_minute":null,"minute":"54","name":"J. Kimmich","name_ar":"يوشوا كيميتش","player_id":"3113","reason":"Right foot shot","related_id":"209020","related_name":"J. Simões","related_name_ar":"جواو سيمويش","team_id":"357","type":"own-goal","var_ar":null},{"extra_minute":null,"minute":"66","name":"R. Mangas","name_ar":"ريكاردو مانغاس","player_id":"44080","reason":null,"related_id":"115159","related_name":"A. Santos","related_name_ar":"أليسون سانتوس","team_id":"357","type":"substitution","var_ar":null},{"extra_minute":null,"minute":"71","name":"M. Hjulmand","name_ar":"مورتن هيولماند","player_id":"9723","reason":"Argument","related_id":null,"related_name":null,"related_name_ar":null,"team_id":"357","type":"yellowcard","var_ar":null},{"extra_minute":null,"minute":"80","name":"F. Ioannidis","name_ar":"فوتيوس يوانيديس","player_id":"85176","reason":null,"related_id":"40865","related_name":"G. Catamo","related_name_ar":"جيني كاتامو","team_id":"357","type":"substitution","var_ar":null},{"extra_minute":null,"minute":"81","name":"G. Vagiannidis","name_ar":"جيورجيوس فاجيانيديس","player_id":"61447","reason":null,"related_id":"34185","related_name":"E. Quaresma","related_name_ar":"إدواردو كواريسما","team_id":"357","type":"substitution","var_ar":null},{"extra_minute":"1","minute":"90","name":"S. Blopa","name_ar":"سلفادور بلوبا","player_id":"223478","reason":null,"related_id":"30771","related_name":"M. Araújo","related_name_ar":"ماكسيميليانو أروجو","team_id":"357","type":"substitution","var_ar":null},{"extra_minute":"1","minute":"90","name":"H. Morita","name_ar":"هيديماسا موريتا","player_id":"7064","reason":null,"related_id":"209020","related_name":"J. Simões","related_name_ar":"جواو سيمويش","team_id":"357","type":"substitution","var_ar":null}],"has_pen":"0","home_gender":"M","home_pen":null,"hometeam_id":"63","hometeam_score":"3","match_id":"215485","match_status":"LIVE","minute":"92","note_ar":null,"round":"6","stagename":"League Stage","stagename_ar":"مرحلة الدوري","start_time":"2025-12-09 17:45:00","tv_stations":[{"commentators":"محمد بركات","link":null,"name":"beIN SPORTS 1","theme_color":"#5C2D91"}],"venue_name":"Allianz Arena","venue_name_ar":"أليانز أرينا","view_status":"live"},"information":[]}
+[00:29:35.797] Browser LOG     {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:29:35.797] Browser LOG     [2;38;2;124;124;124m%s[0m {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:29:37.777] Browser LOG     {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:29:37.777] Browser LOG     [2;38;2;124;124;124m%s[0m {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:29:39.739] Browser LOG     {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:29:39.739] Browser LOG     [2;38;2;124;124;124m%s[0m {"away_team":"سبورتينغ لشبونة","away_team_logo":"https://jdwel.com/image/teams/1444.png","home_team":"بايرن ميونخ","home_team_logo":"https://jdwel.com/image/teams/1300.png","match_id":"215485"}
+[00:30:27.567] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}
+[00:30:27.567] Browser ERROR   Error fetching types: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000/api/","env":{},"headers":{"Accept":"application/json","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MzkxMjY1LCJpYXQiOjE3NjUzMDQ4NjUsImp0aSI6IjlmMTdkMDlhNzQ3YjRhNWNhNDg4NWM2YmY1MDVkZjAwIiwidXNlcl9pZCI6IjEifQ.vDPv8zFRZm-L3q5WmOdwH7NhoY7D-3-abQ7RVXbzzCs","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/competitions/types","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:6768:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:7283:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_b106fd0c._.js:8087:49)\n    at async CompetitionsList.useEffect.fetchTypes (http://localhost:3000/_next/static/chunks/_ff702a63._.js:370:37)","status":404}

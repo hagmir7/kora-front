@@ -98,7 +98,10 @@ export default function CompetitionsList() {
     <div className='space-y-4'>
       {/* Header */}
       <div className='bg-white rounded-lg shadow-sm p-4'>
-        <h2 className='text-2xl font-bold text-gray-900 mb-4'>البطولات</h2>
+        <h2 className='text-md md:text-lg font-bold text-gray-900 mb-4'>
+          {' '}
+          أهم بطولات كرة القدم
+        </h2>
 
         {/* Filters */}
         <div className='flex flex-col sm:flex-row gap-3'>
@@ -160,7 +163,7 @@ export default function CompetitionsList() {
       {/* Competitions Grid */}
       {!loading && !error && (
         <>
-          <div className='grid grid-cols-1 gap-4'>
+          <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
             {competitions.map((competition) => (
               <CompetitionCard key={competition.id} competition={competition} />
             ))}

@@ -33,9 +33,9 @@ const Header = () => {
     },
 
     {
-      id: 'compititions',
+      id: 'competitions',
       label: 'بطولات',
-      href: '/compititions',
+      href: '/competitions',
       icon: <Crown size={20} className='text-[#5C2D91]' />,
     },
   ]
