@@ -1,44 +1,47 @@
 'use client'
-import { useState } from 'react'
-import { Menu, X, Search, Home, Newspaper, Crown, CircleUserRound } from 'lucide-react'
-import { FaFootballBall } from 'react-icons/fa'
+import { useState, useMemo } from 'react'
+import {
+  Menu,
+  X,
+  Search,
+  Newspaper,
+  Crown,
+  CircleUserRound,
+} from 'lucide-react'
 import Link from 'next/link'
 import MobileMenu from './MobileMenu'
 import MobileSearch from './MobileSearch'
 import FootballIcon from './icons/FootballIcon'
-
+import DesktopSearch from '@/components/desktop-search'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
 
-  const navItems = [
-    {
-      id: 'home',
-      label: 'الرئيسية',
-      href: '/',
-      icon: <Home size={20} className='text-[#5C2D91]' />,
-    },
-    {
-      id: 'todya',
-      label: 'مباريات اليوم',
-      icon: <FootballIcon size={20} className='text-[#5C2D91]' />,
-      href: '/',
-    },
-    {
-      id: 'news',
-      label: 'أخبار الرياضة',
-      href: '/news',
-      icon: <Newspaper size={20} className='text-[#5C2D91]' />,
-    },
-
-    {
-      id: 'competitions',
-      label: 'بطولات',
-      href: '/competitions',
-      icon: <Crown size={20} className='text-[#5C2D91]' />,
-    },
-  ]
+  // memoize nav items so they are stable between renders
+  const navItems = useMemo(
+    () => [
+      {
+        id: 'todya',
+        label: 'مباريات اليوم',
+        icon: <FootballIcon size={20} className='text-[#5C2D91]' />,
+        href: '/',
+      },
+      {
+        id: 'news',
+        label: 'أخبار الرياضة',
+        href: '/news',
+        icon: <Newspaper size={20} className='text-[#5C2D91]' />,
+      },
+      {
+        id: 'competitions',
+        label: 'بطولات',
+        href: '/competitions',
+        icon: <Crown size={20} className='text-[#5C2D91]' />,
+      },
+    ],
+    []
+  )
 
   return (
     <header className='sticky top-0 shadow-sm z-[100]'>
@@ -98,6 +101,10 @@ const Header = () => {
                       href={item.href}
                       target={item.external ? '_blank' : undefined}
                       rel={item.external ? 'noopener noreferrer' : undefined}
+                      onClick={() => {
+                        // close mobile menu if any (in case user clicks from a narrow viewport)
+                        setIsMobileMenuOpen(false)
+                      }}
                     >
                       <div className='flex flex-col items-center justify-center gap-y-1 lg:flex-row'>
                         <div className='flex items-center justify-center w-[33px] h-[33px] lg:w-5 lg:h-5 lg:mb-0 rtl:lg:mr-3 rtl:lg:ml-3'>
@@ -116,37 +123,32 @@ const Header = () => {
             {/* Right Side Actions */}
             <div className='flex justify-end items-center md:flex-1 gap-x-3 lg:gap-x-[30px]'>
               {/* Desktop Search */}
-              <button className='text-[#5C2D91] hidden md:block w-6 h-6'>
-                <Search className='w-6 h-6' />
-              </button>
-
+              <DesktopSearch /> {/* <-- Use the capitalized component */}
               {/* Language Switcher */}
               <div className='relative hidden w-6 h-6 md:block text-[#A0A0A0] font-bold hover:text-[#5C2D91]'>
                 <Link href={'/profile'}>
                   <CircleUserRound className='text-[#5C2D91]' />
                 </Link>
               </div>
-
-              {/* Mobile Search */}
               {/* Mobile Search */}
               <button
                 className='md:hidden focus:outline-none'
                 onClick={() => setIsSearchOpen(true)}
+                aria-label='Open search'
               >
                 <Search className='w-6 h-6 text-[#5C2D91]' />
               </button>
-
               <MobileSearch
                 isOpen={isSearchOpen}
                 onClose={() => setIsSearchOpen(false)}
               />
-
               {/* Mobile Menu Toggle */}
               <div className='flex content-center'>
                 <button
                   type='button'
                   className='w-6 h-6 items-center justify-center flex'
                   aria-label='Open Menu Icon'
+                  aria-expanded={isMobileMenuOpen}
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                   {isMobileMenuOpen ? (

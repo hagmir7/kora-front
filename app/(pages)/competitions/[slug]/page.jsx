@@ -6,6 +6,64 @@ import { createServerApi } from '@/lib/serverApi'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+  const api = createServerApi()
+
+  let competition = null
+
+  try {
+    const response = await api.get(`competitions/${slug}`)
+    competition = response.data
+  } catch (error) {
+    return {
+      title: 'البطولة غير موجودة',
+      description: 'الصفحة التي تبحث عنها غير متاحة.',
+    }
+  }
+
+  if (!competition) {
+    return {
+      title: 'البطولة غير موجودة',
+      description: 'الصفحة التي تبحث عنها غير متاحة.',
+    }
+  }
+
+  const title = `${competition.title} (${competition.season})`
+  const description = competition.description
+    ? competition.description.slice(0, 160)
+    : `تعرف على تفاصيل بطولة ${competition.title}، الجدول، المباريات، الإحصائيات، والفرق المشاركة.`
+
+  const image = competition.logo || '/images/default-competition.jpg'
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `https://koratab.com/competitions/${slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://koratab.com/competitions/${slug}`,
+      type: 'article',
+      images: [
+        {
+          url: image,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+  }
+}
+
+
 export default async function Page({ params }) {
   const { slug } = await params
   const api = createServerApi()

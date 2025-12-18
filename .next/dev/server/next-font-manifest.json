@@ -1,9 +1,13 @@
 {
   "app": {
+    "[project]/app/(pages)/auth/login/page": [],
     "[project]/app/(pages)/competitions/[slug]/page": [],
     "[project]/app/(pages)/competitions/page": [],
+    "[project]/app/(pages)/matches/[slug]/page": [],
     "[project]/app/(pages)/news/page": [],
     "[project]/app/_not-found/page": [],
+    "[project]/app/app/page": [],
+    "[project]/app/news/[slug]/page": [],
     "[project]/app/page": []
   },
   "appUsingSizeAdjust": false,

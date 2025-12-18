@@ -1,25 +1,11 @@
 
 import MatchCard from './components/MatchCard';
-import FollowUs from './components/FollowUs';
-import { createServerApi } from '@/lib/serverApi';
 import Newsletter from '@/components/Newsletter';
 import PopularNews from '@/components/popular-news';
-import { notFound } from 'next/navigation';
+import FollowUs from './components/FollowUs';
 
 
 export default async function Home() {
-
-  const api = createServerApi()
-
-  let blogs = [];
-  try {
-    const response = await api.get('popular-blogs');
-    blogs = response.data;
-
-  } catch (error) {
-    notFound();
-  }
-
   return (
     <div className="pt-2 md:pt-5" dir="rtl">
       <main className="flex flex-row relative xl:px-5 bg-gray-50 max-w-7xl mx-auto">

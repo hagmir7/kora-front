@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import GoalList from './GoalList';
+import Link from 'next/link';
 
 const MatchScoreboard = ({ matchData, teams }) => {
     console.log(teams);
@@ -196,6 +197,7 @@ const MatchScoreboard = ({ matchData, teams }) => {
               </div>
             </div>
           )}
+          <Link href={`/matches/${teams?.match_id}`}>صفحة المبراة</Link>
         </div>
       </div>
     </div>
